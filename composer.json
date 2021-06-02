@@ -21,6 +21,7 @@
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
+        "drupal/ctools": "^3.5",
         "drupal/pathauto": "^1.8",
         "drush/drush": "^10.5"
     },
