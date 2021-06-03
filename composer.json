@@ -17,9 +17,13 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/backup_migrate": "^5.0@RC",
+        "drupal/console": "^1.9",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
+        "drupal/ctools": "^3.5",
+        "drupal/devel": "3.x-dev",
         "drupal/pathauto": "^1.8",
         "drush/drush": "^10.5"
     },
