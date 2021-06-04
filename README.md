@@ -1,11 +1,20 @@
 ### MI FRUVER
 
+<<<<<<< HEAD
+=======
+<p>Bienvenidos al Proyecto **MiFruver** portal dedicado a las frutas</p>
+
+>>>>>>> 9462ca55d5516075e03e13f079f2013d1d35fdc6
 ### Instalación
 
 1. Crear el repositorio de Github para almacenar el proyecto
 2. Instalar Drupal con Composer, utilizando el siguiente comando: `composer install`
 3. Configurar el Virtual Hosts de Apache, (http://mifruver.com) , utilizando los siguientes archivos:
+<<<<<<< HEAD
     -  hosts
+=======
+    - hosts
+>>>>>>> 9462ca55d5516075e03e13f079f2013d1d35fdc6
     - httpd-vhosts.conf
 4. Instalar el modulo [admin_toolbar] utilizando el siguiente comando: `composer require drupal/admin_toolbar`
 5. Instalar el modulo [drush] utilizando el siguiente comando: `composer require drush/drush`
@@ -18,11 +27,19 @@
 
 ### Configuración - Flujo de Comandos
 
+<<<<<<< HEAD
 1.  Al solucionar la(s) task de una HU se debe:
      - Nivelar el proyecto localmente utilizando el `git pull origin develop` 
 2.  Crear rama donde se trabaja la HU.  El número que va en la HU hace referencia a la historia de usuario.
      - Utilizar el siguiente comando:  `git checkout - b EP01-FE01-HU001-08 `
      - Dentro de la rama se realiza la solución de la HU
+=======
+1. Al solucionar la(s) task de una HU se debe:
+    - Nivelar el proyecto localmente utilizando el `git pull origin develop` 
+2. Crear rama donde se trabaja la HU.  El número que va en la HU hace referencia a la historia de usuario.
+    - Utilizar el siguiente comando:  `git checkout - b EP01-FE01-HU001-08 `
+    - Dentro de la rama se realiza la solución de la HU
+>>>>>>> 9462ca55d5516075e03e13f079f2013d1d35fdc6
 4. Se adicionar al staged de git con `git add **nombre_archivo**` :  archivos y/o carpetas que se han modificado
 5. Se hace commit con la siguiente estructura `git commit -m ":emoji: AB-08 **Breve explicación de la tarea realizada**"
 6. Se vuelve a hacer el `git pull origin develop` desde la rama de la HU para comprobar que este aún nivelado
@@ -32,13 +49,26 @@
 ### Parámetros para creación de una Rama
 
 Se debe manejar el siguiente estándar:
+<<<<<<< HEAD
      > EP01-FE01-HU001-08
         EP01 = Epica y el número
         FE01 = Feature y el número
         HU01 = Historia de Usuario y el número
         08 = Es el ID de Azure
+=======
+   > EP01-FE01-HU001-08
+     EP01 = Epica y el número
+     FE01 = Feature y el número
+     HU01 = Historia de Usuario y el número
+     08 = Es el ID de Azure
+>>>>>>> 9462ca55d5516075e03e13f079f2013d1d35fdc6
 
 ### Parámetros para creación de un commit
 
 Se debe manejar el siguiente estándar:
+<<<<<<< HEAD
      > git commit -m ":emoji: AB#08 **Breve explicación de la tarea realizada**" 
+=======
+     > git commit -m ":emoji: AB#08 **Breve explicación de la tarea realizada**" 
+     
+>>>>>>> 9462ca55d5516075e03e13f079f2013d1d35fdc6
