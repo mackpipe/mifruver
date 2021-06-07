@@ -51,18 +51,18 @@ Se debe manejar el siguiente estándar:
 
 3. **Partes de un commit**: 
     
-  - `git commit -m ":emoji: AB#1 EP01-FE01-HU001 - Titulo de Historia de Usuario / Bug"`
+     `git commit -m ":emoji: AB#1 EP01-FE01-HU001 - Titulo de Historia de Usuario / Bug"`
 
-       3.1: **`commit`** :  comando para confirmar cambios
-       3.2: **`-m`** : indica que se incluye una descripción al **commit**
-       3.3: **`:emoji:`**:  imagen que esta asociado a la **historia de usuario** 
-       3.4: **`AB#1`** : Indica que se relaciona el **commit** con la Historia de usuario en Azure devops
-       3.5: **`EP01`** : Indica que la historia de usuario/bug pertenece a la **Epica 01**
-       3.6: **`FE01`**:  Indica que pertenece a la **Feature (Característica) 01**  donde esta clasificada la historia de usuario
-       3.7: **`HU01`** : Indica la historia de usuario a la cual se esta asociando el **commit**
-       3.7.1 **`BUG01`**: Indica el **bug** al cual se esta asociando el **commit**
+     - **`commit`** :  comando para confirmar cambios
+     - **`-m`** : indica que se incluye una descripción al **commit**
+     - **`:emoji:`**:  imagen que esta asociado a la **historia de usuario** 
+     - **`AB#1`** : Indica que se relaciona el **commit** con la Historia de usuario en Azure devops
+     - **`EP01`** : Indica que la historia de usuario/bug pertenece a la **Epica 01**
+     - **`FE01`**:  Indica que pertenece a la **Feature (Característica) 01**  donde esta clasificada la historia de usuario
+     - **`HU01`** : Indica la historia de usuario a la cual se esta asociando el **commit**
+     - **`BUG01`**: Indica el **bug** al cual se esta asociando el **commit**
 
-   - Ejemplo de un commit
+   **Ejemplo de un commit**
       
       `git commit -m ":bug: AB#1 EP01-FE01-HU001 - Titulo de Historia de Usuario / Bug"`
 
