@@ -42,3 +42,39 @@ Se debe manejar el siguiente estándar:
 
 Se debe manejar el siguiente estándar:
      > git commit -m ":emoji: AB#08 **Breve explicación de la tarea realizada**" 
+
+## Generación de Commit
+
+1. **Que es un commit**:  Es un comando que se utiliza para documentar algún cambio que se vaya a realizar al proyecto.
+
+2. **Cuando se hace un commit**:  Se hace para indicar que esta lista alguna funcionalidad y que será una nueva versión del código.  Esto se hace para que el equipo colaborativo (desarrolladores) pueda entender y/o solucionar algún error.
+
+3. **Partes de un commit**: 
+    
+  - `git commit -m ":emoji: AB#1 EP01-FE01-HU001 - Titulo de Historia de Usuario / Bug"`
+
+       3.1: **`commit`** :  comando para confirmar cambios
+       3.2: **`-m`** : indica que se incluye una descripción al **commit**
+       3.3: **`:emoji:`**:  imagen que esta asociado a la **historia de usuario** 
+       3.4: **`AB#1`** : Indica que se relaciona el **commit** con la Historia de usuario en Azure devops
+       3.5: **`EP01`** : Indica que la historia de usuario/bug pertenece a la **Epica 01**
+       3.6: **`FE01`**:  Indica que pertenece a la **Feature (Característica) 01**  donde esta clasificada la historia de usuario
+       3.7: **`HU01`** : Indica la historia de usuario a la cual se esta asociando el **commit**
+       3.7.1 **`BUG01`**: Indica el **bug** al cual se esta asociando el **commit**
+
+   - Ejemplo de un commit
+      
+      `git commit -m ":bug: AB#1 EP01-FE01-HU001 - Titulo de Historia de Usuario / Bug"`
+
+      Visualizaciòn en github:      
+       
+      ![image](https://user-images.githubusercontent.com/84405166/121075345-b0cc4480-c79a-11eb-8943-b390325be1ce.png)
+
+4. **Listado de emojis de commit**
+    - En el siguiente link se encuentra el listado de emojis:  [https://gitmoji.dev](url)
+    - Emojis mas usados
+         -  :bug: **bug** Fix a bug / Corregir un error.
+         -  :construction: **construction** Work in progress / Trabajo en progreso.
+         -  :pushpin:  **pushpin** Pin dependencies to specific versions / Anclar dependencias a versiones especificas.
+         -  :wrench:   **wrench** Add or update configuration files / Agregue o actualice archivos de configuración.
+         -  :boom: **boom** Introduce breaking changes / Introduce cambios importantes.
