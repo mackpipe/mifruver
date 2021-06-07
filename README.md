@@ -78,3 +78,32 @@ Se debe manejar el siguiente estándar:
          -  :pushpin:  **pushpin** Pin dependencies to specific versions / Anclar dependencias a versiones especificas.
          -  :wrench:   **wrench** Add or update configuration files / Agregue o actualice archivos de configuración.
          -  :boom: **boom** Introduce breaking changes / Introduce cambios importantes.
+
+##  Configuración de Virtualhost
+
+1.  **Que es Virtualhost**:  Consiste en  darle un nombre de dominio a la IP virtual.
+
+2.  **Pasos a realizar**:  se deben editar los siguientes archivos con el fin de incluirles las siguientes lineas:
+       
+       - **hosts**:  Debe quedar en una línea de código **`127.0.0.1 mifruver.com`**
+           
+           ![image](https://user-images.githubusercontent.com/84405166/120959028-7b821100-c71e-11eb-999c-3cd07dc5c897.png)
+
+       - **httpd-vhosts.conf**:  Se debe registrar en el archivo las siguientes líneas de código en el archivo que se encuentra en la siguiente ruta:
+     
+          ![image](https://user-images.githubusercontent.com/84405166/120959158-c8fe7e00-c71e-11eb-878e-aa566b4e16be.png)
+     
+     **Còdigo** 
+
+         - NameVirtualHost *
+         -   <VirtualHost *>
+         -        DocumentRoot "C:\xampp\htdocs"
+         -        ServerName localhost
+         -   </VirtualHost>
+         -   <VirtualHost>	
+         -  	   DocumentRoot "C:\xampp\htdocs\proyectos\drupal\mifruver"
+         -         ServerName mifruver.com
+         -             <Directory "C:\xampp\htdocs\proyectos\drupal\mifruver">
+         -  	             Require all granted
+         -  	        </Directory>
+         -   </VirtualHost>      
