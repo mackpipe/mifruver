@@ -106,4 +106,30 @@ Se debe manejar el siguiente estándar:
          -             <Directory "C:\xampp\htdocs\proyectos\drupal\mifruver">
          -  	             Require all granted
          -  	        </Directory>
-         -   </VirtualHost>      
+         -   </VirtualHost>
+
+##  Creación Pull Requests
+
+1. **Que es un Pull Requests**:  Es una petición que se realiza para integrar los  cambios de código a un proyecto.
+
+2. **Como se crea un Pull Requests**:  A continuación se relacionan los pasos:
+
+    - Desde GITHUB se ubica en la opción del Menú **Pull requests** y da clic en el botón verde **New Pull Requests**
+    
+       ![image](https://user-images.githubusercontent.com/84405166/120964141-6ad69880-c728-11eb-821a-b983852892f1.png)
+
+    - Selecciona las Ramas en la cual realizo el cambio (Ejemplo:  prueba) y a la que se debe pasar (Ejemplo: develop) 
+    
+       ![image](https://user-images.githubusercontent.com/84405166/120964273-af623400-c728-11eb-97aa-b49288aca063.png)
+
+    - Una vez seleccionadas las ramas, se debe documentar utilizando un estándar en el Pull requests como se muestra en la imagen.   y por ultimo dar click en el botón verde **Create Pull Requests**  
+    
+       ![image](https://user-images.githubusercontent.com/84405166/120966771-4f6d8c80-c72c-11eb-9f9b-e99e7c2fd9ab.png)
+
+    -  Se relaciona a continuación una imagen donde se ve las opciones del **Write** y **Preview**; el primero permite registrar la información (con unos comodines ## funciona para destacar un titulo) y la otra opción es la vista previa ( se ve el texto con formato de titulo)
+
+        ![image](https://user-images.githubusercontent.com/84405166/121092302-f136bd00-c7b0-11eb-83f4-afa90cdde6e4.png)
+
+3.  En la creación del Pull Request se debe seleccionar el **Reviewer**, es la persona que va a revisar el Pull Requests y confirmara si Aprueba o Devuelve para nueva revisiòn.
+
+![image](https://user-images.githubusercontent.com/84405166/121094177-d6197c80-c7b3-11eb-9bf2-4cfac414ff80.png)
