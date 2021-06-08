@@ -24,10 +24,10 @@
 2. Debes que crear una cuanta con ayuda del correo electronico en:
 
 - Azure DevOps
-    + https://azure.microsoft.com/es-es/services/devops/ 
+    + https://azure.microsoft.com/es-es/services/devops/
       - ![image](https://user-images.githubusercontent.com/84990344/121244264-44b61300-c864-11eb-8c1b-f0a3365dd069.png)
 - GitHup
-    + https://github.com/ 
+    + https://github.com/
       - ![image](https://user-images.githubusercontent.com/84990344/121244334-5bf50080-c864-11eb-9839-5d60e8cc5551.png)
 
 3. Despues de clonar el Reposotorio debes instalar Drupal 8, en la seccion de de Instalacion veras el comando necesario para la instalacion de drupal, despues de tenerlo instalado debes crear el entorno local de tu proyecto (mifruver)
@@ -78,37 +78,37 @@ Las ramas permiten trabajar en los entornos locales de los desarrolladores, perm
         HU01 = Historia de Usuario y el número
         08 = Es el ID de Azure
 
-Para crear la rama se utiliza el siguiente comando:  
+Para crear la rama se utiliza el siguiente comando:
 
-    `git checkout -b nombre_rama`  
+    `git checkout -b nombre_rama`
 
-Si deseo cambiar de rama o volver a la rama Develop utilizo el siguiente comando:  
+Si deseo cambiar de rama o volver a la rama Develop utilizo el siguiente comando:
 
-    `git checkout develop`  
+    `git checkout develop`
 
-La jerarquia de las ramas es la siguiente:  
+La jerarquia de las ramas es la siguiente:
 
-![image](https://user-images.githubusercontent.com/75544836/121255932-a0d36400-c871-11eb-8b2d-2b4985e686b4.png)  
+![image](https://user-images.githubusercontent.com/75544836/121255932-a0d36400-c871-11eb-8b2d-2b4985e686b4.png)
 
-Para borrar una rama se utiliza el siguiente comando:  
+Para borrar una rama se utiliza el siguiente comando:
 
-    `git branch -d nombre_rama`  
+    `git branch -d nombre_rama`
 
-Si la rama tiene algun dato sin fusionar se puede forzar el borrado con el siguiente comando:  
+Si la rama tiene algun dato sin fusionar se puede forzar el borrado con el siguiente comando:
 
-    `git branch -D nombre_rama`  
+    `git branch -D nombre_rama`
 
-Para subir la información al repositorio una vez se hallan adicionado al staying y se halla confirmado el commit, la rama finalmente se sube al repositorio con el comando:  
+Para subir la información al repositorio una vez se hallan adicionado al staying y se halla confirmado el commit, la rama finalmente se sube al repositorio con el comando:
 
-    `git push origin nombre_rama`  
+    `git push origin nombre_rama`
 
-Es importante que antes de confirmar la subida de la rama, se confirme que la rama develop se encuentre con los ultimos cambios para ello confirmo con el comando:  
+Es importante que antes de confirmar la subida de la rama, se confirme que la rama develop se encuentre con los ultimos cambios para ello confirmo con el comando:
 
-    `git pull origin develop`  
+    `git pull origin develop`
 
-Si la rama ya se ha subido antes y se desea actualizar confirmo con el comando:  
+Si la rama ya se ha subido antes y se desea actualizar confirmo con el comando:
 
-    `git pull origin nombre_rama`  
+    `git pull origin nombre_rama`
 
 ### Parámetros para creación de un commit
 
