@@ -78,30 +78,37 @@ Las ramas permiten trabajar en los entornos locales de los desarrolladores, perm
         HU01 = Historia de Usuario y el número
         08 = Es el ID de Azure
 
-Para crear la rama se utiliza el siguiente comando:
-    `git checkout -b nombre_rama`
+Para crear la rama se utiliza el siguiente comando:  
 
-Si deseo cambiar de rama o volver a la rama Develop utilizo el siguiente comando:
-    `git checkout develop`
+    `git checkout -b nombre_rama`  
 
-La jerarquia de las ramas es la siguiente:
-    -main
-    -staging
-    -develop
-    -rama HU
+Si deseo cambiar de rama o volver a la rama Develop utilizo el siguiente comando:  
 
-Para borrar una rama se utiliza el siguiente comando:
-    `git branch -d nombre_rama`
-Si la rama tiene algun dato sin fusionar se puede forzar el borrado con el siguiente comando:
-    `git branch -D nombre_rama`
+    `git checkout develop`  
 
-Para subir la información al repositorio una vez se hallan adicionado al staying y se halla confirmado el commit, la rama finalmente se sube al repositorio con el comando:
-    `git push origin nombre_rama`
+La jerarquia de las ramas es la siguiente:  
 
-Es importante que antes de confirmar la subida de la rama, se confirme que la rama develop se encuentre con los ultimos cambios para ello confirmo con el comando:
-    `git pull origin develop`
-Si la rama ya se ha subido antes y se desea actualizar confirmo con el comando:
-    `git pull origin nombre_rama`
+![image](https://user-images.githubusercontent.com/75544836/121255932-a0d36400-c871-11eb-8b2d-2b4985e686b4.png)  
+
+Para borrar una rama se utiliza el siguiente comando:  
+
+    `git branch -d nombre_rama`  
+
+Si la rama tiene algun dato sin fusionar se puede forzar el borrado con el siguiente comando:  
+
+    `git branch -D nombre_rama`  
+
+Para subir la información al repositorio una vez se hallan adicionado al staying y se halla confirmado el commit, la rama finalmente se sube al repositorio con el comando:  
+
+    `git push origin nombre_rama`  
+
+Es importante que antes de confirmar la subida de la rama, se confirme que la rama develop se encuentre con los ultimos cambios para ello confirmo con el comando:  
+
+    `git pull origin develop`  
+
+Si la rama ya se ha subido antes y se desea actualizar confirmo con el comando:  
+
+    `git pull origin nombre_rama`  
 
 ### Parámetros para creación de un commit
 
