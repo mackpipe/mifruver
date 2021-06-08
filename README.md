@@ -1,5 +1,36 @@
 ### MI FRUVER
 
+## Prerrequisitos
+### Software y Cuentas
+
+1. Antes de iniciar con el proyecto debes tener instalado en el PC, los siguientes Software:
+- Xampp:
+    + https://www.apachefriends.org/es/download.html
+    - ![Install Xampp](https://user-images.githubusercontent.com/84990344/121222380-1fb5a600-c84c-11eb-87e1-adb3e39f504f.png)
+- Composer
+    + https://getcomposer.org/download/
+    - ![Install Composer](https://user-images.githubusercontent.com/84990344/121222357-19272e80-c84c-11eb-8bd4-3713caa8ef90.png)
+- Git Bash
+    + https://git-scm.com/download/win
+    - ![Install Git Bash](https://user-images.githubusercontent.com/84990344/121222469-2cd29500-c84c-11eb-9145-7aceaeb8b8d8.png)
+- Visual Studio Code
+    + https://code.visualstudio.com/download
+    - ![InstallVisualStudioCode](https://user-images.githubusercontent.com/84990344/121222433-280de100-c84c-11eb-95b0-4c13573465ad.png)
+
+
+2. Debes que crear una cuanta con ayuda del correo electronico en:
+
+- Azure DevOps
+    + https://azure.microsoft.com/es-es/services/devops/ 
+    - ![CrearUserAzure](https://user-images.githubusercontent.com/84990344/121222705-65726e80-c84c-11eb-9d68-e158a9c06e9a.png)
+- GitHup
+    + https://github.com/ 
+    - ![CrearUserGit](https://user-images.githubusercontent.com/84990344/121222755-6f946d00-c84c-11eb-9e03-5d251b93a260.png)
+
+3. Despues de clonar el Reposotorio debes instalar Drupal 8, en la seccion de de Instalacion veras el comando necesario para la instalacion de drupal, despues de tenerlo instalado debes crear el entorno local de tu proyecto (mifruver)
+    - ![Drupalmifruver](https://user-images.githubusercontent.com/84990344/121222799-7622e480-c84c-11eb-8315-29eeb59b2ab4.png)
+
+4. Debes tener encuanta que las versiones del Xampp y Composer debes ser las mismas.
 ### Instalación
 
 1. Crear el repositorio de Github para almacenar el proyecto
