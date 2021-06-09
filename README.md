@@ -143,6 +143,73 @@ Se debe manejar el siguiente estándar:
          -  :pushpin:  **pushpin** Pin dependencies to specific versions / Anclar dependencias a versiones especificas.
          -  :wrench:   **wrench** Add or update configuration files / Agregue o actualice archivos de configuración.
          -  :boom: **boom** Introduce breaking changes / Introduce cambios importantes.
+         
+
+### Flujo de proceso de GIT
+
+En esta sesion veremos los comandos que se deben usar en cada modificacion del repositorio
+
+#### Al inicio de un proyecto:
+
+- Clonar el repositorio
+ * `git clone`
+   - ![image](https://user-images.githubusercontent.com/84990344/121257544-6e2a6b00-c873-11eb-80c6-3269b7e92b31.png)
+
+#### Verificacion de ramas:
+
+ * `git branch` :Identifica en la rama en la que estas ubicado
+ * `git branch -r` :Identifica todas las ramas del repositorio
+
+ #### Comandos que se usan diariamente
+
+  1. `git checkout develop` :Rama inicial
+
+  2. `git pull origin develop` :Extraer o cargar ultimos cambios del repositorio
+
+  3. `git checkout -b EP01-FE03-HU016-37` :Creacion de una Rama para la solucion de la HU
+ 4. `git status` :Verificacion de estado del repositorio
+ 
+ - Adicionar staged de los archivos/o carpetas de Git <composer.json y composer.lock>
+
+  5. `git add .` :subir todos los archivos
+     `git add nombre_archivo` :Subir solo 1 archivo
+
+  6. `git commit -m ":emoji:AB-37 Breve explicacion de la Solicion de HU" ` :Comentario de la solucion de HU
+
+  7. `git push origin <nombre de rama HU>` :Cargar o subir contenido al repositorio
+ 
+  - Despues de subir el contenido al repo, se procede a realizar el pull request de la rama HU a la rama Develop.
+
+ ### Ejemplo de pasos diarios 
+    
+   - `git branch`
+ - ![image](https://user-images.githubusercontent.com/84990344/121252238-62d44100-c86d-11eb-8343-8d906a2a9517.png)
+    
+   - `git branch -r`
+ - ![image](https://user-images.githubusercontent.com/84990344/121252374-88f9e100-c86d-11eb-91d7-b2e527132aab.png)
+    
+   - `git checkout develop`
+ - ![image](https://user-images.githubusercontent.com/84990344/121252491-adee5400-c86d-11eb-9c89-740314516e59.png)
+
+   
+   - `git pull origin develop`
+ - ![image](https://user-images.githubusercontent.com/84990344/121252605-d24a3080-c86d-11eb-85aa-d01c652dbf2a.png)
+    
+   - `git checkout EP01-FE03-HU016-37`
+ - ![image](https://user-images.githubusercontent.com/84990344/121252734-f86fd080-c86d-11eb-8236-dba6eb18698b.png)
+    
+   - `git status`
+ - ![image](https://user-images.githubusercontent.com/84990344/121253061-4b498800-c86e-11eb-8e6c-f26c81e0b69f.png)
+    
+   - `git add img`
+ - ![image](https://user-images.githubusercontent.com/84990344/121254168-931cdf00-c86f-11eb-9c50-5ad538268454.png)
+    
+   - `git commit -m ":memo: AB#42 Se actualiza nueva seccion Prerrequisitos en el archivo README.md"`
+ - ![image](https://user-images.githubusercontent.com/84990344/121261953-05de8800-c879-11eb-8b95-c5d3c6e508de.png)
+    
+   - `git push origin EP01-FE03-HU018-42`
+ - ![image](https://user-images.githubusercontent.com/84990344/121255314-e2174400-c870-11eb-8470-93624c918cd5.png) 
+
 
 ##  Configuración de Virtualhost
 
