@@ -1,5 +1,35 @@
 ## MI FRUVER
 
+## Descripción del proyecto
+
+El Proyecto estara enfocado en la creación de un sistema para administración y venta para un establecimiento de frutas y verduras llamado Mi Fruver.
+
+### Características del proyecto 
+
+- Cuenta para cada Cliente
+- Pago a Proveedores
+- Registro de Artículos con código
+- Lleve un control detallado de su inventario, ventas, clientes, cortes de caja y mucho mas...
+- Software compatible con una amplia gama de complementos como lectores de códigos de barras, min-iprinter, cajones de dinero y computadoras.
+- Bases de Datos
+- Emisión de Tiket
+- Registro de Ventas
+- Movimientos de caja
+- Informes de Cierres de caja
+- Altas de Clientes
+- Inventarios
+- Productos
+- Productos por almacén
+- Categorías de productos
+- Atributos de productos
+- Control de insumos
+- Categorías de impuestos
+- Informes de Máximos y Mínimos
+- Ventas por Producto
+- Ventas por Vendedor
+- Usuarios con diferentes permisos
+- Respaldo y restauración de la base de datos
+
 ### Prerrequisitos
 ### Software y Cuentas
 
