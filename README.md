@@ -4,7 +4,7 @@
 
 El Proyecto estara enfocado en la creación de un sistema para administración y venta para un establecimiento de frutas y verduras llamado Mi Fruver.
 
-### Características del proyecto 
+### Características del proyecto
 
 - Cuenta para cada Cliente
 - Pago a Proveedores
@@ -30,7 +30,7 @@ El Proyecto estara enfocado en la creación de un sistema para administración y
 - Usuarios con diferentes permisos
 - Respaldo y restauración de la base de datos
 
-### Prerrequisitos
+## Prerrequisitos
 ### Software y Cuentas
 
 1. Antes de iniciar con el proyecto debes tener instalado en el PC, los siguientes Software:
@@ -66,37 +66,40 @@ El Proyecto estara enfocado en la creación de un sistema para administración y
 
 4. Debes tener encuanta que las versiones del Xampp y Composer debes ser las mismas.
 
+## Proceso de instalación del Proyecto
 
-### Instalación
+1. Copiar la url del repositorio desde GITHUB, se da clic en la opción **Code** y se copia la url del repositorio
+[https://github.com/mackpipe/mifruver.git](url)
 
-1. Crear el repositorio de Github para almacenar el proyecto
-2. Instalar Drupal con Composer, utilizando el siguiente comando: `composer install`
-3. Configurar el Virtual Hosts de Apache, (http://mifruver.com) , utilizando los siguientes archivos:
-    -  hosts
-    - httpd-vhosts.conf
-4. Instalar el modulo [admin_toolbar] utilizando el siguiente comando: `composer require drupal/admin_toolbar`
-5. Instalar el modulo [drush] utilizando el siguiente comando: `composer require drush/drush`
-    - Ejecutar el comando de borrado de cache `vendor/drush/drush/drush cr` para validar el resultado
-6. Instalar el modulo [console] utilizando el siguiente comando: `composer require drupal/console --witch-dependencies`
-    - Ejecutar el comando de borrado de cache `vendor/drupal/console/bin/drupal cr` para validar el resultado
-7. Configurar el proceso de sincronización
-8. Instalar el modulo contribuido [console] utilizando el siguiente comando: `composer require drupal/backup_migrate:5.0.0-rc2`
-9. Instalar el modulo [token] utilizando el siguiente comando:
+![image](https://user-images.githubusercontent.com/36545398/121240048-8db79880-c85f-11eb-940c-00f46481bb54.png)
 
-### Configuración - Flujo de Comandos
+2. Crear directorio en el servidor local **xampp** en la ruta [C:\xampp\htdocs\]
 
-1.  Al solucionar la(s) task de una HU se debe:
-     - Nivelar el proyecto localmente utilizando el `git pull origin develop`
-2.  Crear rama donde se trabaja la HU.  El número que va en la HU hace referencia a la historia de usuario.
-     - Utilizar el siguiente comando:  `git checkout - b EP01-FE01-HU001-08 `
-     - Dentro de la rama se realiza la solución de la HU
-4. Se adicionar al staged de git con `git add **nombre_archivo**` :  archivos y/o carpetas que se han modificado
-5. Se hace commit con la siguiente estructura `git commit -m ":emoji: AB-08 **Breve explicación de la tarea realizada**"
-6. Se vuelve a hacer el `git pull origin develop` desde la rama de la HU para comprobar que este aún nivelado
-7. Se ejecuta el `git push origin develop` para subir el archivo
-8. Se procede a crear el pull request de la rama de la HU a la rama develop en Github
+3. Ejecutar git desde el directorio creado, se da click derecho y selecciona la opción **Git Bash Here**
 
-### Generación de Ramas
+![image](https://user-images.githubusercontent.com/36545398/121240199-b049b180-c85f-11eb-89ee-a46af65b4e95.png)
+
+4. Clonar el repositorio, desde la consola del **Git Bash Here** ejecutar el comando `git clone https://github.com/mackpipe/mifruver.git`
+
+5. Crear la rama develop con el comando `git checkout -m develop`
+
+6. Crear la rama de la historia de usuario asignada con el comando `git checkout -m HU-12345`
+
+7. Actualizar la rama creada con los ultimos cambios del repositorio con el comando `git pull origin develop`
+
+9. Instalar por medio de Composer el proyecto que se descargo en la clonación del GITHUB con el comando `composer install`
+
+10. Iniciar proceso de instalación del sitio Drupal, para esto se debe abrir el navegador e indicar la ruta del proyecto [http://localhost/proyectos/mifruver/web/](url)
+
+    - Seleccionar el lenguaje en el cual se desea la instalacíon
+
+    - Seleccionar el perfil de instalación, se recomienda instalación estandar
+
+    - Configurar la base de datos, para esto se debe desde el navegador ingresar a la ruta [http://localhost/phpmyadmin/] y en esta crear la base de datos.
+
+    - Configurar nombre del sitio, correo electronico y zona horaria
+
+## Generación de Ramas
 
 La generación de las ramas se debe realizar para el caso de los desarrolladores a partir de la rama Develop. Esta rama debe ser la principal y todos los desarrolladores deben estar sincronizados con esta rama y sus ultimas modificaciones para evitar conflictos.
 
@@ -140,12 +143,12 @@ Si la rama ya se ha subido antes y se desea actualizar confirmo con el comando:
 
     `git pull origin nombre_rama`
 
-### Parámetros para creación de un commit
+## Parámetros para creación de un commit
 
 Se debe manejar el siguiente estándar:
      > git commit -m ":emoji: AB#08 **Breve explicación de la tarea realizada**"
 
-## Generación de Commit
+### Generación de Commit
 
 1. **Que es un commit**:  Es un comando que se utiliza para documentar algún cambio que se vaya a realizar al proyecto.
 
@@ -180,24 +183,24 @@ Se debe manejar el siguiente estándar:
          -  :pushpin:  **pushpin** Pin dependencies to specific versions / Anclar dependencias a versiones especificas.
          -  :wrench:   **wrench** Add or update configuration files / Agregue o actualice archivos de configuración.
          -  :boom: **boom** Introduce breaking changes / Introduce cambios importantes.
-         
 
-### Flujo de proceso de GIT
+
+## Flujo de proceso de GIT
 
 En esta sesion veremos los comandos que se deben usar en cada modificacion del repositorio
 
-#### Al inicio de un proyecto:
+### Al inicio de un proyecto:
 
 - Clonar el repositorio
  * `git clone`
    - ![image](https://user-images.githubusercontent.com/84990344/121257544-6e2a6b00-c873-11eb-80c6-3269b7e92b31.png)
 
-#### Verificacion de ramas:
+### Verificacion de ramas:
 
  * `git branch` :Identifica en la rama en la que estas ubicado
  * `git branch -r` :Identifica todas las ramas del repositorio
 
- #### Comandos que se usan diariamente
+ ### Comandos que se usan diariamente
 
   1. `git checkout develop` :Rama inicial
 
@@ -205,7 +208,7 @@ En esta sesion veremos los comandos que se deben usar en cada modificacion del r
 
   3. `git checkout -b EP01-FE03-HU016-37` :Creacion de una Rama para la solucion de la HU
  4. `git status` :Verificacion de estado del repositorio
- 
+
  - Adicionar staged de los archivos/o carpetas de Git <composer.json y composer.lock>
 
   5. `git add .` :subir todos los archivos
@@ -214,38 +217,38 @@ En esta sesion veremos los comandos que se deben usar en cada modificacion del r
   6. `git commit -m ":emoji:AB-37 Breve explicacion de la Solicion de HU" ` :Comentario de la solucion de HU
 
   7. `git push origin <nombre de rama HU>` :Cargar o subir contenido al repositorio
- 
+
   - Despues de subir el contenido al repo, se procede a realizar el pull request de la rama HU a la rama Develop.
 
- ### Ejemplo de pasos diarios 
-    
+ ### Ejemplo de pasos diarios
+
    - `git branch`
  - ![image](https://user-images.githubusercontent.com/84990344/121252238-62d44100-c86d-11eb-8343-8d906a2a9517.png)
-    
+
    - `git branch -r`
  - ![image](https://user-images.githubusercontent.com/84990344/121252374-88f9e100-c86d-11eb-91d7-b2e527132aab.png)
-    
+
    - `git checkout develop`
  - ![image](https://user-images.githubusercontent.com/84990344/121252491-adee5400-c86d-11eb-9c89-740314516e59.png)
 
-   
+
    - `git pull origin develop`
  - ![image](https://user-images.githubusercontent.com/84990344/121252605-d24a3080-c86d-11eb-85aa-d01c652dbf2a.png)
-    
+
    - `git checkout EP01-FE03-HU016-37`
  - ![image](https://user-images.githubusercontent.com/84990344/121252734-f86fd080-c86d-11eb-8236-dba6eb18698b.png)
-    
+
    - `git status`
  - ![image](https://user-images.githubusercontent.com/84990344/121253061-4b498800-c86e-11eb-8e6c-f26c81e0b69f.png)
-    
+
    - `git add img`
  - ![image](https://user-images.githubusercontent.com/84990344/121254168-931cdf00-c86f-11eb-9c50-5ad538268454.png)
-    
+
    - `git commit -m ":memo: AB#42 Se actualiza nueva seccion Prerrequisitos en el archivo README.md"`
  - ![image](https://user-images.githubusercontent.com/84990344/121261953-05de8800-c879-11eb-8b95-c5d3c6e508de.png)
-    
+
    - `git push origin EP01-FE03-HU018-42`
- - ![image](https://user-images.githubusercontent.com/84990344/121255314-e2174400-c870-11eb-8470-93624c918cd5.png) 
+ - ![image](https://user-images.githubusercontent.com/84990344/121255314-e2174400-c870-11eb-8470-93624c918cd5.png)
 
 
 ##  Configuración de Virtualhost
@@ -303,36 +306,52 @@ En esta sesion veremos los comandos que se deben usar en cada modificacion del r
 
 ![image](https://user-images.githubusercontent.com/84405166/121094177-d6197c80-c7b3-11eb-9bf2-4cfac414ff80.png)
 
+## Solución de un conflicto en GitHub
 
-### Proceso de instalación del Proyecto
+Un conflicto se genera cuando se cambia el mismo archivo de manera contradictoria, mas especificamente cuando se editan exactamente las mismas lineas en el mismo archivo. En ese caso, Git no tiene forma de saber que es correcto; se debe mirar los cambios y decidir como se quiere que se vea finalmente el archivo.
 
-1. Copiar la url del repositorio desde GITHUB, se da clic en la opción **Code** y se copia la url del repositorio 
-[https://github.com/mackpipe/mifruver.git](url)
+### ¿Como conocer si tengo un conflicto?
 
-![image](https://user-images.githubusercontent.com/36545398/121240048-8db79880-c85f-11eb-940c-00f46481bb54.png)
+En la terminal de Git cuando envio el comando "git status" se muestra un problema en las ramas y un problema para fusionarlas un "unmerged" tal y como se puede ver a continuación:
 
-2. Crear directorio en el servidor local **xampp** en la ruta [C:\xampp\htdocs\]
+![image](https://user-images.githubusercontent.com/75544836/121393306-d6ca2400-c915-11eb-8b43-180cf8bf2c5a.png)
 
-3. Ejecutar git desde el directorio creado, se da click derecho y selecciona la opción **Git Bash Here**
+### ¿Que veo cuando abro el archivo?
 
-![image](https://user-images.githubusercontent.com/36545398/121240199-b049b180-c85f-11eb-89ee-a46af65b4e95.png)
+En el archivo, Git simplemente marca las áreas que se editaron de manera contradictoria, asi:
 
-4. Clonar el repositorio, desde la consola del **Git Bash Here** ejecutar el comando `git clone https://github.com/mackpipe/mifruver.git`
+Archivo Local
 
-5. Crear la rama develop con el comando `git checkout -m develop`
+![image](https://user-images.githubusercontent.com/75544836/121394000-87382800-c916-11eb-8a38-e3c25797174e.png)
 
-6. Crear la rama de la historia de usuario asignada con el comando `git checkout -m HU-12345`
+Archivo Entrante
 
-7. Actualizar la rama creada con los ultimos cambios del repositorio con el comando `git pull origin develop`
+![image](https://user-images.githubusercontent.com/75544836/121394326-d67e5880-c916-11eb-8470-3d05216aa6de.png)
 
-9. Instalar por medio de Composer el proyecto que se descargo en la clonación del GITHUB con el comando `composer install`
+### ¿Que significan las opciones que ofrece git?
 
-10. Iniciar proceso de instalación del sitio Drupal, para esto se debe abrir el navegador e indicar la ruta del proyecto [http://localhost/proyectos/mifruver/web/](url)
+En esta parte encontramos varias opciones:
 
-    - Seleccionar el lenguaje en el cual se desea la instalacíon
+![image](https://user-images.githubusercontent.com/75544836/121394634-29f0a680-c917-11eb-8520-0a4f2f08c5d8.png)
 
-    - Seleccionar el perfil de instalación, se recomienda instalación estandar
+* La primera opción "Accept Current Change" es Aceptar el cambio actual es decir deja el Archivo Local
 
-    - Configurar la base de datos, para esto se debe desde el navegador ingresar a la ruta [http://localhost/phpmyadmin/] y en esta crear la base de datos.
+* La segunda opción "Accept Incomming Change" es Aceptar cambio entrante es decir deja el Archivo Entrante
 
-    - Configurar nombre del sitio, correo electronico y zona horaria
+* La tercera opción "Accept Both Change" es Aceptar ambos cambios es decir deja los dos archivos
+
+* La cuarta opción "Compare Change" es Comparar los cambios es decir que muestra linea a linea que cambio
+
+### Resolución del conflicto:
+
+1. Inicialmente puedo usar la cuarta opción para que muestre los cambios linea a linea entre los dos archivos, una vez ubicadas las diferencias agrego mis cambios en un block de notas o algun documento externo.
+
+2. Acepto la segunda opción de los cambios entrantes, edito de nuevo el archivo adicionando los cambios que guarde externamente.
+
+3. Adiciono a la rama en la que estoy trabajando el archivo que estaba modificando y que habia generado el conflicto con `git add nombre_archivo`
+
+4. Confirmo el archivo con el commit `git commit -m ":emogi: AB#1 descripcion del evento"`
+
+5. Subo el cambio al repositorio de GitHub `git push origin nombre_rama`
+
+6. Genero Pull Request a la rama Develop en GitHub
