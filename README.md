@@ -1,5 +1,35 @@
 ## MI FRUVER
 
+## Descripción del proyecto
+
+El Proyecto estara enfocado en la creación de un sistema para administración y venta para un establecimiento de frutas y verduras llamado Mi Fruver.
+
+### Características del proyecto 
+
+- Cuenta para cada Cliente
+- Pago a Proveedores
+- Registro de Artículos con código
+- Lleve un control detallado de su inventario, ventas, clientes, cortes de caja y mucho mas...
+- Software compatible con una amplia gama de complementos como lectores de códigos de barras, min-iprinter, cajones de dinero y computadoras.
+- Bases de Datos
+- Emisión de Tiket
+- Registro de Ventas
+- Movimientos de caja
+- Informes de Cierres de caja
+- Altas de Clientes
+- Inventarios
+- Productos
+- Productos por almacén
+- Categorías de productos
+- Atributos de productos
+- Control de insumos
+- Categorías de impuestos
+- Informes de Máximos y Mínimos
+- Ventas por Producto
+- Ventas por Vendedor
+- Usuarios con diferentes permisos
+- Respaldo y restauración de la base de datos
+
 ### Prerrequisitos
 ### Software y Cuentas
 
@@ -78,37 +108,30 @@ Las ramas permiten trabajar en los entornos locales de los desarrolladores, perm
         HU01 = Historia de Usuario y el número
         08 = Es el ID de Azure
 
-Para crear la rama se utiliza el siguiente comando:  
+Para crear la rama se utiliza el siguiente comando:
+    `git checkout -b nombre_rama`
 
-    `git checkout -b nombre_rama`  
+Si deseo cambiar de rama o volver a la rama Develop utilizo el siguiente comando:
+    `git checkout develop`
 
-Si deseo cambiar de rama o volver a la rama Develop utilizo el siguiente comando:  
+La jerarquia de las ramas es la siguiente:
+    -main
+    -staging
+    -develop
+    -rama HU
 
-    `git checkout develop`  
+Para borrar una rama se utiliza el siguiente comando:
+    `git branch -d nombre_rama`
+Si la rama tiene algun dato sin fusionar se puede forzar el borrado con el siguiente comando:
+    `git branch -D nombre_rama`
 
-La jerarquia de las ramas es la siguiente:  
+Para subir la información al repositorio una vez se hallan adicionado al staying y se halla confirmado el commit, la rama finalmente se sube al repositorio con el comando:
+    `git push origin nombre_rama`
 
-![image](https://user-images.githubusercontent.com/75544836/121255932-a0d36400-c871-11eb-8b2d-2b4985e686b4.png)  
-
-Para borrar una rama se utiliza el siguiente comando:  
-
-    `git branch -d nombre_rama`  
-
-Si la rama tiene algun dato sin fusionar se puede forzar el borrado con el siguiente comando:  
-
-    `git branch -D nombre_rama`  
-
-Para subir la información al repositorio una vez se hallan adicionado al staying y se halla confirmado el commit, la rama finalmente se sube al repositorio con el comando:  
-
-    `git push origin nombre_rama`  
-
-Es importante que antes de confirmar la subida de la rama, se confirme que la rama develop se encuentre con los ultimos cambios para ello confirmo con el comando:  
-
-    `git pull origin develop`  
-
-Si la rama ya se ha subido antes y se desea actualizar confirmo con el comando:  
-
-    `git pull origin nombre_rama`  
+Es importante que antes de confirmar la subida de la rama, se confirme que la rama develop se encuentre con los ultimos cambios para ello confirmo con el comando:
+    `git pull origin develop`
+Si la rama ya se ha subido antes y se desea actualizar confirmo con el comando:
+    `git pull origin nombre_rama`
 
 ### Parámetros para creación de un commit
 
@@ -277,15 +300,15 @@ En esta sesion veremos los comandos que se deben usar en cada modificacion del r
 ### Proceso de instalación del Proyecto
 
 1. Copiar la url del repositorio desde GITHUB, se da clic en la opción **Code** y se copia la url del repositorio 
-[https://github.com/mackpipe/mifruver.git]
+[https://github.com/mackpipe/mifruver.git](url)
 
-        ![image](https://user-images.githubusercontent.com/36545398/121240048-8db79880-c85f-11eb-940c-00f46481bb54.png)
+![image](https://user-images.githubusercontent.com/36545398/121240048-8db79880-c85f-11eb-940c-00f46481bb54.png)
 
 2. Crear directorio en el servidor local **xampp** en la ruta [C:\xampp\htdocs\]
 
 3. Ejecutar git desde el directorio creado, se da click derecho y selecciona la opción **Git Bash Here**
 
-        ![image](https://user-images.githubusercontent.com/36545398/121240199-b049b180-c85f-11eb-89ee-a46af65b4e95.png)
+![image](https://user-images.githubusercontent.com/36545398/121240199-b049b180-c85f-11eb-89ee-a46af65b4e95.png)
 
 4. Clonar el repositorio, desde la consola del **Git Bash Here** ejecutar el comando `git clone https://github.com/mackpipe/mifruver.git`
 
@@ -297,7 +320,7 @@ En esta sesion veremos los comandos que se deben usar en cada modificacion del r
 
 9. Instalar por medio de Composer el proyecto que se descargo en la clonación del GITHUB con el comando `composer install`
 
-10. Iniciar proceso de instalación del sitio Drupal, para esto se debe abrir el navegador e indicar la ruta del proyecto [http://localhost/proyectos/mifruver/web/].
+10. Iniciar proceso de instalación del sitio Drupal, para esto se debe abrir el navegador e indicar la ruta del proyecto [http://localhost/proyectos/mifruver/web/](url)
 
     - Seleccionar el lenguaje en el cual se desea la instalacíon
 
