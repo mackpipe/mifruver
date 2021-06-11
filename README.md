@@ -83,6 +83,23 @@ El Proyecto estara enfocado en la creación de un sistema para administración y
 
 - Cambiarse al directorio mifruver (El directorio del proyecto clonado)
 
+- Se recomienda para efectos de pruebas y que el proceso automatico no tenga problemas, se cree un usuario en mysql con todos los privilegios para no usar el usuario root).
+
+  - Abrir CMD (consola de windows)  y ejecutar  `c:/xampp/mysql/bin`
+
+  - Luego de estar ubicado en **c:/xampp/mysql/bin** se debe ecutar el siguiente comando `mysql -uroot -p`
+
+  - El sistema pedira la clave del usuario roor, indicarla y deberia quedar en el Inicio de sesion de mysql, como se muestra en la imagen
+  ![image](https://user-images.githubusercontent.com/1072188/121724037-e760d280-caac-11eb-8d44-5765241c1e34.png)
+
+  - Estando en la consola de Mysql ejecutar el siguiente comando: `CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';`
+
+  - El comando anterior crea un usuario en mysql, ahora solo faltaria darle los permisos con el siguiente comando `GRANT ALL PRIVILEGES ON * . * TO 'admin'@'localhost';`
+
+  - Ya estaria listo la creación del usuario, ahora solo teclee exit y cerrar ventana. 
+
+- Abrir el archivo **.env** y asignar los valores a las variables segun se tenga su ambiente local (Aqui estamos usando ya el usuario que acabamos de crear)
+
 - Ejecutar el comando `./init.sh` (Este comando hace los siguientes procesos)
   - Crea la rama develop
   - Descarga los ultimos cambios de develop
