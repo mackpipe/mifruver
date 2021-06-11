@@ -45,6 +45,16 @@ cp backup/backup_initial.mysql $MYSQL_PATH/sql
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
+echo >&2 " 2. Copiando los archivos de configuracion settings.php y settings.local.php "
+echo >&2
+echo >&2 "========================================================================"
+
+cp backup/settings.php ./web/sites/default
+cp backup/settings.local.php ./web/sites/default
+
+# Print the message to console
+echo >&2 "========================================================================"
+echo >&2
 echo >&2 " Se ubica en el directorio de Mysql "
 echo >&2
 echo >&2 "========================================================================"
