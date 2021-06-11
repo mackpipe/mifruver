@@ -121,8 +121,15 @@ sleep 5
 
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " !!!  LISTO EL POLLO !!!! "
+echo >&2 "                      !!!  LISTO EL POLLO !!!! "
 echo >&2
 echo >&2 " Ya puedes entrar al proyecto desde el navegador, ya esta listo Drupal8 "
+echo >&2
+echo >&2 " Para entrar a la administración usa las siguientes credenciales:       "
+echo >&2
+echo >&2 "                          Usuario : admin                               "
+echo >&2 "                          Clave   : admin                               "
+echo >&2
+echo >&2 "                             GOOD LUCK                                  "
 echo >&2
 echo >&2 "========================================================================"
