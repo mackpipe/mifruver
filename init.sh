@@ -6,6 +6,9 @@ then
   export $(cat .env | sed 's/#.*//g' | xargs)
 fi
 
+# Define la carpeta donde se almacenara el backup de la base de datos a ejecutar
+FOLDER_SQL=$MYSQL_PATH/sql
+
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
@@ -18,7 +21,7 @@ git checkout -b develop
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 1. Descargando actualizacion de la rama develop "
+echo >&2 " 2. Descargando actualizacion de la rama develop "
 echo >&2
 echo >&2 "========================================================================"
 
@@ -27,7 +30,7 @@ git pull origin develop
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 1. Ejecutando composer install "
+echo >&2 " 3. Ejecutando composer install "
 echo >&2
 echo >&2 "========================================================================"
 
@@ -36,16 +39,7 @@ composer install
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 2. Copiando el archivo de backup a la carpeta para ejecutar "
-echo >&2
-echo >&2 "========================================================================"
-
-cp backup/backup_initial.mysql $MYSQL_PATH/sql
-
-# Print the message to console
-echo >&2 "========================================================================"
-echo >&2
-echo >&2 " 2. Copiando los archivos de configuracion settings.php y settings.local.php "
+echo >&2 " 4. Copiando settings.php y settings.local.php a web/sites/default"
 echo >&2
 echo >&2 "========================================================================"
 
@@ -55,14 +49,29 @@ cp backup/settings.local.php ./web/sites/default
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " Se ubica en el directorio de Mysql "
+echo >&2 " 5. Copiando el backup de la base de datos a $FOLDER_SQL "
+echo >&2
+echo >&2 "========================================================================"
+
+ # Create the custom modules folder
+if ! [ -d "$FOLDER_SQL" ]
+then  
+  mkdir $FOLDER_SQL
+fi
+
+cp backup/backup_initial.mysql $MYSQL_PATH/sql
+
+# Print the message to console
+echo >&2 "========================================================================"
+echo >&2
+echo >&2 " 6. Se cambia de directorio de trabajo a $MYSQL_PATH "
 echo >&2
 echo >&2 "========================================================================"
 cd $MYSQL_PATH
 
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " Borra la base de datos $MYSQL_DATABASE "
+echo >&2 " 7. Borra la base de datos $MYSQL_DATABASE"
 echo >&2
 echo >&2 "========================================================================"
 
@@ -70,7 +79,7 @@ echo >&2 "======================================================================
 
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " Crea la base de datos $MYSQL_DATABASE"
+echo >&2 " 8. Crea la base de datos $MYSQL_DATABASE"
 echo >&2
 echo >&2 "========================================================================"
 
@@ -78,9 +87,42 @@ echo >&2 "======================================================================
 
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " Importa el backup en la base de datos $MYSQL_DATABASE"
+echo >&2 " 9. Importa el backup en la base de datos $MYSQL_DATABASE"
 echo >&2
 echo >&2 "========================================================================"
 
 ./mysql -u$MYSQL_USER -p$MYSQL_PASSWORD --default-character-set=utf8 $MYSQL_DATABASE < sql/backup_initial.mysql
 
+echo >&2 "========================================================================"
+echo >&2
+echo >&2 " !! Backup importado correctamente!!"
+echo >&2
+echo >&2 "========================================================================"
+
+sleep 5
+
+echo >&2 "========================================================================"
+echo >&2
+echo >&2 " 10. Se borra el cache de Drupal"
+echo >&2
+echo >&2 "========================================================================"
+
+sleep 5
+
+echo >&2 "========================================================================"
+echo >&2
+echo >&2 " !Upps! no supe como borrar cache, pero puedes hacerlo tu mismo"
+echo >&2
+echo >&2 " vendor/drush/drush/drush cr"
+echo >&2
+echo >&2 "========================================================================"
+
+sleep 5
+
+echo >&2 "========================================================================"
+echo >&2
+echo >&2 " !!!  LISTO EL POLLO !!!! "
+echo >&2
+echo >&2 " Ya puedes entrar al proyecto desde el navegador, ya esta listo Drupal8 "
+echo >&2
+echo >&2 "========================================================================"
