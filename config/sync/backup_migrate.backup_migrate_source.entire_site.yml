@@ -1,0 +1,11 @@
+uuid: 49e821bb-5b29-41a6-ba9f-3baec1761260
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0ziF0ShQzLTglyja9_chf5qouy7Ce3i-254JN-PWmk4
+id: entire_site
+label: 'Todo el sitio web'
+type: EntireSite
+config:
+  name: 'Entire Site'
