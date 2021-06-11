@@ -62,11 +62,19 @@ cd $MYSQL_PATH
 
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " Borra la base de datos $MYSQL_DATABASE y la reconstruye "
+echo >&2 " Borra la base de datos $MYSQL_DATABASE "
 echo >&2
 echo >&2 "========================================================================"
 
-./mysql -u$MYSQL_USER -p$MYSQL_PASSWORD -e "DROP database $MYSQL_DATABASE; CREATE database $MYSQL_DATABASE"
+./mysql -u$MYSQL_USER -p$MYSQL_PASSWORD -e "DROP database $MYSQL_DATABASE;"
+
+echo >&2 "========================================================================"
+echo >&2
+echo >&2 " Crea la base de datos $MYSQL_DATABASE"
+echo >&2
+echo >&2 "========================================================================"
+
+./mysql -u$MYSQL_USER -p$MYSQL_PASSWORD -e "CREATE database $MYSQL_DATABASE"
 
 echo >&2 "========================================================================"
 echo >&2
