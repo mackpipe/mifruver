@@ -68,36 +68,29 @@ El Proyecto estara enfocado en la creación de un sistema para administración y
 
 ## Proceso de instalación del Proyecto
 
-1. Copiar la url del repositorio desde GITHUB, se da clic en la opción **Code** y se copia la url del repositorio
+- Copiar la url del repositorio desde GITHUB, se da clic en la opción **Code** y se copia la url del repositorio
 [https://github.com/mackpipe/mifruver.git](url)
 
 ![image](https://user-images.githubusercontent.com/36545398/121240048-8db79880-c85f-11eb-940c-00f46481bb54.png)
 
-2. Crear directorio en el servidor local **xampp** en la ruta [C:\xampp\htdocs\]
+- Crear directorio en el servidor local **xampp** en la ruta [C:\xampp\htdocs\]
 
-3. Ejecutar git desde el directorio creado, se da click derecho y selecciona la opción **Git Bash Here**
+- Ejecutar git desde el directorio creado, se da click derecho y selecciona la opción **Git Bash Here**
 
 ![image](https://user-images.githubusercontent.com/36545398/121240199-b049b180-c85f-11eb-89ee-a46af65b4e95.png)
 
-4. Clonar el repositorio, desde la consola del **Git Bash Here** ejecutar el comando `git clone https://github.com/mackpipe/mifruver.git`
+- Clonar el repositorio, desde la consola del **Git Bash Here** ejecutar el comando `git clone https://github.com/mackpipe/mifruver.git`
 
-5. Crear la rama develop con el comando `git checkout -m develop`
+- Cambiarse al directorio mifruver (El directorio del proyecto clonado)
 
-6. Crear la rama de la historia de usuario asignada con el comando `git checkout -m HU-12345`
+- Ejecutar el comando `./init.sh` (Este comando hace los siguientes procesos)
+  - Crea la rama develop
+  - Descarga los ultimos cambios de develop
+  - Borra la base de datos configurada en .env
+  - Crea la base de datos configurada en .env
+  - Importa el backup inicial de la base de datos para Drupal
 
-7. Actualizar la rama creada con los ultimos cambios del repositorio con el comando `git pull origin develop`
-
-9. Instalar por medio de Composer el proyecto que se descargo en la clonación del GITHUB con el comando `composer install`
-
-10. Iniciar proceso de instalación del sitio Drupal, para esto se debe abrir el navegador e indicar la ruta del proyecto [http://localhost/proyectos/mifruver/web/](url)
-
-    - Seleccionar el lenguaje en el cual se desea la instalacíon
-
-    - Seleccionar el perfil de instalación, se recomienda instalación estandar
-
-    - Configurar la base de datos, para esto se debe desde el navegador ingresar a la ruta [http://localhost/phpmyadmin/] y en esta crear la base de datos.
-
-    - Configurar nombre del sitio, correo electronico y zona horaria
+- Entrar al sitio desde el navegador.
 
 ## Generación de Ramas
 
