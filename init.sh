@@ -8,6 +8,7 @@ fi
 
 # Define la carpeta donde se almacenara el backup de la base de datos a ejecutar
 FOLDER_SQL=$MYSQL_PATH/sql
+FOLDER_LIBRARIES="libraries"
 
 # Print the message to console
 echo >&2 "========================================================================"
@@ -49,11 +50,26 @@ cp backup/settings.local.php ./web/sites/default
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
+echo >&2 " 4. Copiando librerias de modulos Contrib"
+echo >&2
+echo >&2 "========================================================================"
+
+# Create the custom modules folder
+if ! [ -d "$FOLDER_LIBRARIES" ]
+then  
+  mkdir $FOLDER_LIBRARIES
+fi
+
+cp -R backup/libraries/* ./web/libraries
+
+# Print the message to console
+echo >&2 "========================================================================"
+echo >&2
 echo >&2 " 5. Copiando el backup de la base de datos a $FOLDER_SQL "
 echo >&2
 echo >&2 "========================================================================"
 
- # Create the custom modules folder
+# Create the custom modules folder
 if ! [ -d "$FOLDER_SQL" ]
 then  
   mkdir $FOLDER_SQL
