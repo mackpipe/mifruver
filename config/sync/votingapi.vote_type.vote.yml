@@ -1,0 +1,10 @@
+uuid: d8f0f268-4e5d-44a3-bbec-e7ea7574d390
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aXZ2sOR-jVF6_oScPSJTjXCo333arzczomYQMnsJ8wU
+id: vote
+label: 'Voto normal'
+value_type: points
+description: 'La etiqueta predeterminada para votos en contenido. Si se están emitiendo múltiples votos con distintas etiquetas en una pieza de contenido, considere emitir un voto de «resumen» con esta etiqueta también.'

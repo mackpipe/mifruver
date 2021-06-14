@@ -8,12 +8,21 @@ fi
 
 # Define la carpeta donde se almacenara el backup de la base de datos a ejecutar
 FOLDER_SQL=$MYSQL_PATH/sql
-FOLDER_LIBRARIES="libraries"
+FOLDER_LIBRARIES="web/libraries"
 
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 1. Generando rama develop "
+echo >&2 " Inicio de instalación de proyecto "
+echo >&2
+echo >&2 "========================================================================"
+
+sleep 3
+
+# Print the message to console
+echo >&2 "========================================================================"
+echo >&2
+echo >&2 " Generando rama develop (git checkout - develop)"
 echo >&2
 echo >&2 "========================================================================"
 
@@ -22,7 +31,7 @@ git checkout -b develop
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 2. Descargando actualizacion de la rama develop "
+echo >&2 " Descargando actualizacion (git pull origin develop)"
 echo >&2
 echo >&2 "========================================================================"
 
@@ -31,7 +40,7 @@ git pull origin develop
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 3. Ejecutando composer install "
+echo >&2 " Descargando dependencias (composer install)"
 echo >&2
 echo >&2 "========================================================================"
 
@@ -40,54 +49,65 @@ composer install
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 4. Copiando settings.php y settings.local.php a web/sites/default"
+echo >&2 " Copiando archivos de configuración a web/sites/default"
+echo >&2
+echo >&2 "          (settings.php y settings.local.php)"
 echo >&2
 echo >&2 "========================================================================"
 
-cp backup/settings.php ./web/sites/default
-cp backup/settings.local.php ./web/sites/default
+cp backup/settings/settings.php ./web/sites/default
+cp backup/settings/settings.local.php ./web/sites/default
 
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 4. Copiando librerias de modulos Contrib"
+echo >&2 " Copiando archivo de standard de programación (phpcs.xml)"
+echo >&2
+echo >&2 "========================================================================"
+
+cp backup/config/phpcs.xml .
+
+# Print the message to console
+echo >&2 "========================================================================"
+echo >&2
+echo >&2 " Copiando librerias de modulos Contrib (carpeta web/libraries)"
 echo >&2
 echo >&2 "========================================================================"
 
 # Create the custom modules folder
 if ! [ -d "$FOLDER_LIBRARIES" ]
-then  
+then
   mkdir $FOLDER_LIBRARIES
 fi
 
-cp -R backup/libraries/* ./web/libraries
+cp -R backup/libraries/* $FOLDER_LIBRARIES
 
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 5. Copiando el backup de la base de datos a $FOLDER_SQL "
+echo >&2 " Copiando el backup de la base de datos a $FOLDER_SQL"
 echo >&2
 echo >&2 "========================================================================"
 
 # Create the custom modules folder
 if ! [ -d "$FOLDER_SQL" ]
-then  
+then
   mkdir $FOLDER_SQL
 fi
 
-cp backup/backup_initial.mysql $MYSQL_PATH/sql
+cp backup/db/backup_initial.mysql $MYSQL_PATH/sql
 
 # Print the message to console
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 6. Se cambia de directorio de trabajo a $MYSQL_PATH "
+echo >&2 " Se cambia de directorio de trabajo a $MYSQL_PATH"
 echo >&2
 echo >&2 "========================================================================"
 cd $MYSQL_PATH
 
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 7. Borra la base de datos $MYSQL_DATABASE"
+echo >&2 " Borra la base de datos $MYSQL_DATABASE si existe"
 echo >&2
 echo >&2 "========================================================================"
 
@@ -95,7 +115,7 @@ echo >&2 "======================================================================
 
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 8. Crea la base de datos $MYSQL_DATABASE"
+echo >&2 " Crea la base de datos $MYSQL_DATABASE vacia"
 echo >&2
 echo >&2 "========================================================================"
 
@@ -103,7 +123,7 @@ echo >&2 "======================================================================
 
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 9. Importa el backup en la base de datos $MYSQL_DATABASE"
+echo >&2 " Importa el backup en la base de datos $MYSQL_DATABASE"
 echo >&2
 echo >&2 "========================================================================"
 
@@ -119,7 +139,7 @@ sleep 5
 
 echo >&2 "========================================================================"
 echo >&2
-echo >&2 " 10. Se borra el cache de Drupal"
+echo >&2 " Borrando cache de Drupal"
 echo >&2
 echo >&2 "========================================================================"
 
