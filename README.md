@@ -81,11 +81,11 @@ El Proyecto estara enfocado en la creación de un sistema para administración y
 
 - Clonar el repositorio, desde la consola del **Git Bash Here** ejecutar el comando `git clone https://github.com/mackpipe/mifruver.git`
 
-- Cambiarse al directorio mifruver (El directorio del proyecto clonado)
+- Cambiarse al directorio mifruver (El directorio del proyecto clonado ` cd mifruver`)
 
 - Se recomienda para efectos de pruebas y que el proceso automatico no tenga problemas, se cree un usuario en mysql con todos los privilegios para no usar el usuario root).
 
-  - Abrir CMD (consola de windows)  y ejecutar  `c:/xampp/mysql/bin`
+  - Abrir CMD (consola de windows)  y ejecutar  `cd c:/xampp/mysql/bin`
 
   - Luego de estar ubicado en **c:/xampp/mysql/bin** se debe ecutar el siguiente comando `mysql -uroot -p`
 
@@ -96,7 +96,7 @@ El Proyecto estara enfocado en la creación de un sistema para administración y
 
   - El comando anterior crea un usuario en mysql, ahora solo faltaria darle los permisos con el siguiente comando `GRANT ALL PRIVILEGES ON * . * TO 'admin'@'localhost';`
 
-  - Ya estaria listo la creación del usuario, ahora solo teclee exit y cerrar ventana. 
+  - Ya estaria listo la creación del usuario, ahora solo teclee exit y cerrar ventana.
 
 - Abrir el archivo **.env** y asignar los valores a las variables segun se tenga su ambiente local (Aqui estamos usando ya el usuario que acabamos de crear)
 
