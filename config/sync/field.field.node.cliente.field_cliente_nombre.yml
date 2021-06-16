@@ -1,0 +1,27 @@
+uuid: 65a55357-51e2-4f26-81d8-7d66c8b92d60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_nombre
+    - node.type.cliente
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.cliente.field_cliente_nombre
+field_name: field_cliente_nombre
+entity_type: node
+bundle: cliente
+label: Nombre
+description: 'Digitar el nombre del cliente.  Ej:  Carlos'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
