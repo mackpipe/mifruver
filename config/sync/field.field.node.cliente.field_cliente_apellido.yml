@@ -1,0 +1,27 @@
+uuid: 20c4ca81-6b51-4d80-bf32-3b9197472fbc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_apellido
+    - node.type.cliente
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.cliente.field_cliente_apellido
+field_name: field_cliente_apellido
+entity_type: node
+bundle: cliente
+label: Apellido
+description: 'Ingrese su apellido Ejemplo: Chavez'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
