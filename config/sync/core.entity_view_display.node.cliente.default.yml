@@ -1,0 +1,29 @@
+uuid: b5433fd6-c97c-4d0a-b237-5c0340c74ad8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.cliente.body
+    - node.type.cliente
+  module:
+    - text
+    - user
+id: node.cliente.default
+targetEntityType: node
+bundle: cliente
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
