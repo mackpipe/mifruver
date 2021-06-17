@@ -1,0 +1,11 @@
+uuid: 0efe0410-0e5f-4845-843a-ad6942fa581d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cliente_tipo_cliente
+id: taxonomy_term.cliente_tipo_cliente
+target_entity_type_id: taxonomy_term
+target_bundle: cliente_tipo_cliente
+default_langcode: site_default
+language_alterable: false
