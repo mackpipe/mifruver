@@ -1,0 +1,28 @@
+uuid: c27a172f-8cf1-448a-8e82-7050aad7bc73
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_tipo_documento
+    - node.type.cliente
+  module:
+    - options
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.cliente.field_cliente_tipo_documento
+field_name: field_cliente_tipo_documento
+entity_type: node
+bundle: cliente
+label: 'Tipo Documento'
+description: 'Seleccione el tipo de documento'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -6,8 +6,10 @@ dependencies:
     - field.field.node.cliente.body
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_nombre
+    - field.field.node.cliente.field_cliente_tipo_documento
     - node.type.cliente
   module:
+    - options
     - panelizer
     - text
     - user
@@ -44,6 +46,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_cliente_tipo_documento:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   links:
     weight: 0
