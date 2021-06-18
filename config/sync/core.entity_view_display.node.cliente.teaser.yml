@@ -5,7 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.cliente.body
+    - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_nombre
+    - field.field.node.cliente.field_cliente_tipo_documento
     - node.type.cliente
   module:
     - text
@@ -29,5 +31,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_cliente_apellido: true
   field_cliente_nombre: true
+  field_cliente_tipo_documento: true
   langcode: true

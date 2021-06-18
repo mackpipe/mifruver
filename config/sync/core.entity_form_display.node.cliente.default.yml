@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.cliente.body
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_nombre
+    - field.field.node.cliente.field_cliente_tipo_documento
     - node.type.cliente
   module:
     - path
@@ -46,6 +47,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_cliente_tipo_documento:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   langcode:
     type: language_select
