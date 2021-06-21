@@ -1,10 +1,14 @@
-uuid: 48c38e4f-fd84-4f46-a9c6-c6ece7a0b9c6
+uuid: 004ac24c-c5ff-451d-a948-f531b9c805e1
 langcode: es
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.cliente.body
+    - field.field.node.cliente.field_cliente_apellido
+    - field.field.node.cliente.field_cliente_nombre
+    - field.field.node.cliente.field_cliente_numero_documento
+    - field.field.node.cliente.field_cliente_tipo_documento
     - node.type.cliente
   module:
     - text
@@ -28,4 +32,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_cliente_apellido: true
+  field_cliente_nombre: true
+  field_cliente_numero_documento: true
+  field_cliente_tipo_documento: true
   langcode: true
