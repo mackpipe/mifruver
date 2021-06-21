@@ -1,0 +1,8 @@
+uuid: 636dbc7d-daf8-4e5f-ad9c-2e0b8e04d2fd
+langcode: es
+status: true
+dependencies: {  }
+name: Forma_Pago
+vid: forma_pago
+description: 'Tipo de taxonomía para diferentes formas de pago que se tiene en Mi Fruver.'
+weight: 0
