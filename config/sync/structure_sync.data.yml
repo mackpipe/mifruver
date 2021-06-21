@@ -1,0 +1,42 @@
+taxonomies:
+  forma_pago:
+    -
+      vid: forma_pago
+      tid: '1'
+      langcode: es
+      name: Efectivo
+      description__value: "<p>se le llama dinero efectivo al dinero en forma de monedas o papel moneda que se utiliza para realizar pagos en metálico o efectivo.</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: 8ab64e67-d760-4e29-a9be-34114caa19d1
+    -
+      vid: forma_pago
+      tid: '2'
+      langcode: es
+      name: Debito
+      description__value: "<p>Es una tarjeta bancaria de plástico donde es usada para poder efectuar con ella operaciones financieras activas.</p>\r\n"
+      description__format: basic_html
+      weight: '1'
+      parent: '0'
+      uuid: a205fd08-097d-4843-b0b6-78494a2b382c
+    -
+      vid: forma_pago
+      tid: '3'
+      langcode: es
+      name: Credito
+      description__value: "<p>Una tarjeta de crédito es una tarjeta de plástico emitida por una compañía financiera y permite a su propietario la opción de pedir prestado dinero del emisor.</p>\r\n"
+      description__format: basic_html
+      weight: '2'
+      parent: '0'
+      uuid: 8a3778f3-474f-496f-b29c-e339181f402e
+    -
+      vid: forma_pago
+      tid: '4'
+      langcode: es
+      name: Bono
+      description__value: "<p>Papel, tarjeta o documento que se puede canjear por una cantidad de dinero, un objeto o un servicio.</p>\r\n"
+      description__format: basic_html
+      weight: '3'
+      parent: '0'
+      uuid: 2069aa21-e52d-4977-ae61-20282d0a9665

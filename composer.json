@@ -66,6 +66,7 @@
         "drupal/slick_extras": "^1.0@RC",
         "drupal/slick_paragraphs": "^2.1",
         "drupal/slick_views": "^2.4",
+        "drupal/structure_sync": "^2.0",
         "drupal/svg_image": "^1.14",
         "drupal/token": "^1.9",
         "drupal/transliterate_filenames": "^1.5",
