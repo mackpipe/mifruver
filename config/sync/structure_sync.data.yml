@@ -1,8 +1,50 @@
 taxonomies:
+  forma_pago:
+    -
+      vid: forma_pago
+      tid: '7'
+      langcode: es
+      name: Bono
+      description__value: "<p>Los&nbsp;<strong>bonos</strong>&nbsp;son valores de deuda utilizados tanto por entidades privadas como por entidades de gobierno.</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: e18b1df3-6f4d-48a2-ab30-6ec701f0403a
+    -
+      vid: forma_pago
+      tid: '6'
+      langcode: es
+      name: Credito
+      description__value: "<p>El&nbsp;<strong>crédito</strong>&nbsp;es un préstamo de dinero que una parte otorga a otra, con el compromiso de que, en el futuro, quien lo recibe devolverá dicho préstamo en forma gradual</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: 04966c47-a255-49a8-8aa5-6443eb5e9198
+    -
+      vid: forma_pago
+      tid: '5'
+      langcode: es
+      name: Debito
+      description__value: "<p><strong>Débito</strong>&nbsp;se define como deuda, obligación de pagar o reintegrar una cosa</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: ed97a8b7-25aa-476a-b89e-d7048b3fbb68
+    -
+      vid: forma_pago
+      tid: '4'
+      langcode: es
+      name: Efectivo
+      description__value: "<p>El&nbsp;<strong>efectivo</strong>&nbsp;es un elemento de balance y forma parte del activo circulante</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: 9f3b2d95-58aa-4c68-bf77-379f8c82969d
+  tags: {  }
   tipo_cliente:
     -
       vid: tipo_cliente
-      tid: '6'
+      tid: '2'
       langcode: es
       name: Frecuente
       description__value: "<p>Cliente que utiliza el servicio de 4 a 6 veces al mes.</p>\r\n"
@@ -12,7 +54,7 @@ taxonomies:
       uuid: 1420c157-2ff6-4082-b90e-919c7db8c866
     -
       vid: tipo_cliente
-      tid: '5'
+      tid: '1'
       langcode: es
       name: Preferencial
       description__value: "<p>Identifica al cliente que una vez al mes como minimo utiliza los servicios.</p>\r\n"
@@ -22,7 +64,7 @@ taxonomies:
       uuid: e00b9167-fa27-494f-a5c3-26f77009ddf9
     -
       vid: tipo_cliente
-      tid: '7'
+      tid: '3'
       langcode: es
       name: VIP
       description__value: "<p>Cliente que utiliza el servicio mas de 15 veces al mes.</p>\r\n"
