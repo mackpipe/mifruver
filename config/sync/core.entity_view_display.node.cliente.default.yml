@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.cliente.body
     - field.field.node.cliente.field_cliente_apellido
+    - field.field.node.cliente.field_cliente_direccion
     - field.field.node.cliente.field_cliente_nombre
     - field.field.node.cliente.field_cliente_numero_documento
     - field.field.node.cliente.field_cliente_tipo_documento
@@ -40,6 +41,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_cliente_direccion:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_cliente_nombre:
     weight: 2
     label: above

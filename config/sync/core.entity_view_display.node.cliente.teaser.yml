@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.cliente.body
     - field.field.node.cliente.field_cliente_apellido
+    - field.field.node.cliente.field_cliente_direccion
     - field.field.node.cliente.field_cliente_nombre
     - field.field.node.cliente.field_cliente_numero_documento
     - field.field.node.cliente.field_cliente_tipo_documento
@@ -33,6 +34,7 @@ content:
     region: content
 hidden:
   field_cliente_apellido: true
+  field_cliente_direccion: true
   field_cliente_nombre: true
   field_cliente_numero_documento: true
   field_cliente_tipo_documento: true
