@@ -1,0 +1,27 @@
+uuid: 1a381407-aeb0-4caa-84e9-096e1355658c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_direccion
+    - node.type.cliente
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.cliente.field_cliente_direccion
+field_name: field_cliente_direccion
+entity_type: node
+bundle: cliente
+label: Dirección
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
