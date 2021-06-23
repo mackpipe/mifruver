@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.cliente.body
     - field.field.node.cliente.field_cliente_apellido
+    - field.field.node.cliente.field_cliente_celular
     - field.field.node.cliente.field_cliente_direccion
     - field.field.node.cliente.field_cliente_nombre
     - field.field.node.cliente.field_cliente_numero_documento
@@ -12,6 +13,7 @@ dependencies:
     - node.type.cliente
   module:
     - path
+    - telephone
     - text
 id: node.cliente.default
 targetEntityType: node
@@ -42,6 +44,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_cliente_celular:
+    weight: 29
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
   field_cliente_direccion:
     weight: 28
     settings:
