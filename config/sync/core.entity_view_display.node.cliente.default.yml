@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.cliente.body
     - field.field.node.cliente.field_cliente_apellido
+    - field.field.node.cliente.field_cliente_celular
     - field.field.node.cliente.field_cliente_direccion
     - field.field.node.cliente.field_cliente_nombre
     - field.field.node.cliente.field_cliente_numero_documento
@@ -41,6 +42,13 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_cliente_celular:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   field_cliente_direccion:
     weight: 6
     label: above

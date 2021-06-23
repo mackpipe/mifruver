@@ -1,0 +1,21 @@
+uuid: f973a25d-2b9b-4a6c-a7df-dd6d23747d76
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_celular
+    - node.type.cliente
+  module:
+    - telephone
+id: node.cliente.field_cliente_celular
+field_name: field_cliente_celular
+entity_type: node
+bundle: cliente
+label: Celular
+description: 'Ingrese su numero de celular Ejemplo: 3022423658'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone
