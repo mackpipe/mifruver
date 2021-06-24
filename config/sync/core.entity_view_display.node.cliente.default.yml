@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.cliente.field_cliente_direccion
     - field.field.node.cliente.field_cliente_nombre
     - field.field.node.cliente.field_cliente_numero_documento
+    - field.field.node.cliente.field_cliente_tipo_cliente
     - field.field.node.cliente.field_cliente_tipo_documento
     - node.type.cliente
   module:
@@ -72,6 +73,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_cliente_tipo_cliente:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_cliente_tipo_documento:
     weight: 4
