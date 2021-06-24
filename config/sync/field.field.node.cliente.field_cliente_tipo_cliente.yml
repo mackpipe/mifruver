@@ -1,0 +1,37 @@
+uuid: 7e394d16-a5e5-4fdf-a793-86f0be0f7908
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_tipo_cliente
+    - node.type.cliente
+    - taxonomy.vocabulary.tipo_cliente
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.cliente.field_cliente_tipo_cliente
+field_name: field_cliente_tipo_cliente
+entity_type: node
+bundle: cliente
+label: 'Tipo Cliente'
+description: 'Muestra los tipos de clientes que maneja Mi Fruver'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_cliente: tipo_cliente
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
