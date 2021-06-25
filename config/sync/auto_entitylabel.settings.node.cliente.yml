@@ -1,0 +1,9 @@
+status: 0
+pattern: ''
+escape: false
+preserve_titles: false
+save: 0
+chunk: '50'
+dependencies:
+  config:
+    - node.type.cliente

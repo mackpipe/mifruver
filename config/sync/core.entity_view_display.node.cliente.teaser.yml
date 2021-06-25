@@ -1,0 +1,49 @@
+uuid: 004ac24c-c5ff-451d-a948-f531b9c805e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cliente.body
+    - field.field.node.cliente.field_cliente_apellido
+    - field.field.node.cliente.field_cliente_celular
+    - field.field.node.cliente.field_cliente_direccion
+    - field.field.node.cliente.field_cliente_fecha_constitucion
+    - field.field.node.cliente.field_cliente_forma_pago
+    - field.field.node.cliente.field_cliente_nombre
+    - field.field.node.cliente.field_cliente_numero_documento
+    - field.field.node.cliente.field_cliente_tipo_cliente
+    - field.field.node.cliente.field_cliente_tipo_documento
+    - node.type.cliente
+  module:
+    - text
+    - user
+id: node.cliente.teaser
+targetEntityType: node
+bundle: cliente
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_cliente_apellido: true
+  field_cliente_celular: true
+  field_cliente_direccion: true
+  field_cliente_fecha_constitucion: true
+  field_cliente_forma_pago: true
+  field_cliente_nombre: true
+  field_cliente_numero_documento: true
+  field_cliente_tipo_cliente: true
+  field_cliente_tipo_documento: true
+  langcode: true

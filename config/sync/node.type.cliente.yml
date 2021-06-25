@@ -1,0 +1,17 @@
+uuid: 354ea995-4079-4d64-a0d1-a1b83fec2e55
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Cliente
+type: cliente
+description: 'Tipo de contenido para almacenar información de los clientes'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,8 @@
+uuid: 20aca04c-8efd-4350-b244-d9b668489688
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo Cliente'
+vid: tipo_cliente
+description: 'Clasificación de los tipos de clientes'
+weight: 0

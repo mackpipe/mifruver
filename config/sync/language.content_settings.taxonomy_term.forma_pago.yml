@@ -1,0 +1,11 @@
+uuid: 528ccc86-9237-409b-8ce2-d11c68b26f56
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forma_pago
+id: taxonomy_term.forma_pago
+target_entity_type_id: taxonomy_term
+target_bundle: forma_pago
+default_langcode: site_default
+language_alterable: false
