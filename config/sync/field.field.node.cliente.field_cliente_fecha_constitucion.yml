@@ -1,0 +1,24 @@
+uuid: 9b06085b-696c-440f-b14d-2ac4a2085906
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_fecha_constitucion
+    - node.type.cliente
+  module:
+    - datetime
+id: node.cliente.field_cliente_fecha_constitucion
+field_name: field_cliente_fecha_constitucion
+entity_type: node
+bundle: cliente
+label: 'Fecha Constitución'
+description: 'Ingrese la fecha en la que su empresa fue creada'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime
