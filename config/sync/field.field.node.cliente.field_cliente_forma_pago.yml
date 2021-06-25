@@ -1,0 +1,37 @@
+uuid: cac96852-b201-426d-9c63-71ec5baee62c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_forma_pago
+    - node.type.cliente
+    - taxonomy.vocabulary.forma_pago
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.cliente.field_cliente_forma_pago
+field_name: field_cliente_forma_pago
+entity_type: node
+bundle: cliente
+label: 'Forma Pago'
+description: 'Identifique de que Forma va a realizar sus pagos en Mi Fruver'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      forma_pago: forma_pago
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
