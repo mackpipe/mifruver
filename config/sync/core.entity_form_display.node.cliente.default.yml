@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_celular
     - field.field.node.cliente.field_cliente_direccion
+    - field.field.node.cliente.field_cliente_forma_pago
     - field.field.node.cliente.field_cliente_nombre
     - field.field.node.cliente.field_cliente_numero_documento
     - field.field.node.cliente.field_cliente_tipo_cliente
@@ -60,6 +61,19 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_cliente_forma_pago:
+    weight: 31
+    settings:
+      parent: '0'
+      level_labels: ''
+      force_deepest: false
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+      none_label: '- Please select -'
+    third_party_settings: {  }
+    type: cshs
     region: content
   field_cliente_nombre:
     weight: 9
