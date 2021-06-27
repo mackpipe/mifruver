@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_celular
     - field.field.node.cliente.field_cliente_direccion
+    - field.field.node.cliente.field_cliente_fax
     - field.field.node.cliente.field_cliente_fecha_constitucion
     - field.field.node.cliente.field_cliente_forma_pago
     - field.field.node.cliente.field_cliente_nombre
@@ -61,6 +62,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_cliente_fax:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   field_cliente_fecha_constitucion:
     weight: 10
