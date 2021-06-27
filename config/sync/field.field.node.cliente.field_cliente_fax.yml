@@ -1,0 +1,21 @@
+uuid: d03f993a-5e47-4ede-8c2d-bce0a3e95aac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_fax
+    - node.type.cliente
+  module:
+    - telephone
+id: node.cliente.field_cliente_fax
+field_name: field_cliente_fax
+entity_type: node
+bundle: cliente
+label: Fax
+description: 'Ingrese el numero de Fax Ejemplo: 7000000'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone
