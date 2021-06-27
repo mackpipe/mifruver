@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.cliente.field_cliente_forma_pago
     - field.field.node.cliente.field_cliente_nombre
     - field.field.node.cliente.field_cliente_numero_documento
+    - field.field.node.cliente.field_cliente_regimen
     - field.field.node.cliente.field_cliente_tipo_cliente
     - field.field.node.cliente.field_cliente_tipo_documento
     - node.type.cliente
@@ -44,6 +45,7 @@ hidden:
   field_cliente_forma_pago: true
   field_cliente_nombre: true
   field_cliente_numero_documento: true
+  field_cliente_regimen: true
   field_cliente_tipo_cliente: true
   field_cliente_tipo_documento: true
   langcode: true

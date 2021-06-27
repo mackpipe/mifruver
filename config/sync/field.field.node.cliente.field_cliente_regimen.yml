@@ -1,0 +1,28 @@
+uuid: a611ab9d-a86a-4a9b-81d6-9fb9e1793c1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_regimen
+    - node.type.cliente
+  module:
+    - options
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.cliente.field_cliente_regimen
+field_name: field_cliente_regimen
+entity_type: node
+bundle: cliente
+label: Regimen
+description: 'Seleccione su Tipo de Regimen Ejemplo: Subsidiado o Contributivo.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

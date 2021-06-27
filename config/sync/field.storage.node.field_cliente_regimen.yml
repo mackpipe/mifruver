@@ -1,0 +1,31 @@
+uuid: 59312376-5d41-46bd-8afd-d2f1de2ac291
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_cliente_regimen
+field_name: field_cliente_regimen
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Contributivo
+      label: Contributivo
+    -
+      value: Subsidiado
+      label: Subsidiado
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
