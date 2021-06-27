@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.cliente.field_cliente_forma_pago
     - field.field.node.cliente.field_cliente_nombre
     - field.field.node.cliente.field_cliente_numero_documento
+    - field.field.node.cliente.field_cliente_regimen
     - field.field.node.cliente.field_cliente_tipo_cliente
     - field.field.node.cliente.field_cliente_tipo_documento
     - node.type.cliente
@@ -98,6 +99,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_cliente_regimen:
+    weight: 33
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_cliente_tipo_cliente:
     weight: 30
