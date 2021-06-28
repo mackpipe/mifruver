@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.contacto.body
+    - field.field.node.contacto.field_contacto_apellido
     - field.field.node.contacto.field_contacto_nombre
     - node.type.contacto
   module:
@@ -30,6 +31,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_contacto_apellido:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_contacto_nombre:
     weight: 122
     settings:
