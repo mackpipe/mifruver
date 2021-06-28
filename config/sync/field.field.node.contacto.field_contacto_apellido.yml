@@ -1,0 +1,27 @@
+uuid: 3bae1b26-fd9c-4dc7-b329-d893652ac975
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contacto_apellido
+    - node.type.contacto
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.contacto.field_contacto_apellido
+field_name: field_contacto_apellido
+entity_type: node
+bundle: contacto
+label: Apellido
+description: 'Ingrese el (los) apellido (s) del contacto. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
