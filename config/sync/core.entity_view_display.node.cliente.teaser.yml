@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.cliente.field_cliente_regimen
     - field.field.node.cliente.field_cliente_tipo_cliente
     - field.field.node.cliente.field_cliente_tipo_documento
+    - field.field.node.cliente.field_cliente_tipo_persona
     - node.type.cliente
   module:
     - text
@@ -50,4 +51,5 @@ hidden:
   field_cliente_regimen: true
   field_cliente_tipo_cliente: true
   field_cliente_tipo_documento: true
+  field_cliente_tipo_persona: true
   langcode: true

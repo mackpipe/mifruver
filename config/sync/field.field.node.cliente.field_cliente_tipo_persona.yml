@@ -1,0 +1,28 @@
+uuid: e99c456f-9f5c-47e7-8821-98e0d64e2449
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_tipo_persona
+    - node.type.cliente
+  module:
+    - options
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.cliente.field_cliente_tipo_persona
+field_name: field_cliente_tipo_persona
+entity_type: node
+bundle: cliente
+label: 'Tipo Persona'
+description: 'Seleccione el tipo de persona Ejemplo: Natural'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
