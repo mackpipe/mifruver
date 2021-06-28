@@ -1,0 +1,11 @@
+uuid: a87389b8-fb74-41c2-bba1-c08b5b02d0af
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contacto
+id: node.contacto
+target_entity_type_id: node
+target_bundle: contacto
+default_langcode: site_default
+language_alterable: false
