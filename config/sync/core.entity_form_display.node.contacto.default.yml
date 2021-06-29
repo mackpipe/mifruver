@@ -3,28 +3,17 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.contacto.body
     - field.field.node.contacto.field_contacto_apellido
     - field.field.node.contacto.field_contacto_nombre
+    - field.field.node.contacto.field_contacto_tipo_documento
     - node.type.contacto
   module:
     - path
-    - text
 id: node.contacto.default
 targetEntityType: node
 bundle: contacto
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
@@ -46,6 +35,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_contacto_tipo_documento:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   langcode:
     type: language_select
