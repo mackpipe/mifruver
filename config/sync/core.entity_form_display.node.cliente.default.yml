@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.cliente.body
+    - field.field.node.cliente.field_cliente_act_economica
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_celular
     - field.field.node.cliente.field_cliente_direccion
@@ -30,7 +31,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 20
+    weight: 21
     settings:
       rows: 9
       summary_rows: 3
@@ -40,27 +41,35 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 15
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_cliente_act_economica:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_cliente_apellido:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_cliente_celular:
-    weight: 6
+    weight: 7
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_cliente_direccion:
-    weight: 5
+    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -68,20 +77,20 @@ content:
     type: string_textfield
     region: content
   field_cliente_fax:
-    weight: 11
+    weight: 12
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_cliente_fecha_constitucion:
-    weight: 9
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_cliente_forma_pago:
-    weight: 8
+    weight: 9
     settings:
       parent: '0'
       level_labels: ''
@@ -94,7 +103,7 @@ content:
     type: cshs
     region: content
   field_cliente_nombre:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -102,7 +111,7 @@ content:
     type: string_textfield
     region: content
   field_cliente_numero_documento:
-    weight: 4
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -110,13 +119,13 @@ content:
     type: string_textfield
     region: content
   field_cliente_regimen:
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_cliente_tipo_cliente:
-    weight: 7
+    weight: 8
     settings:
       parent: '0'
       level_labels: ''
@@ -129,27 +138,27 @@ content:
     type: cshs
     region: content
   field_cliente_tipo_documento:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_cliente_tipo_persona:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   langcode:
     type: language_select
-    weight: 13
+    weight: 14
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 18
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -157,26 +166,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 17
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 19
+    weight: 20
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 18
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 12
+    weight: 0
     region: content
     settings:
       size: 60
@@ -184,7 +193,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 14
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60

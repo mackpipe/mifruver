@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.cliente.body
+    - field.field.node.cliente.field_cliente_act_economica
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_celular
     - field.field.node.cliente.field_cliente_direccion
@@ -40,6 +41,14 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_cliente_act_economica:
+    weight: 14
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_cliente_apellido:
     type: string

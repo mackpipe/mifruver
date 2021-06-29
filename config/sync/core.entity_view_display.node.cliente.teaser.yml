@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.cliente.body
+    - field.field.node.cliente.field_cliente_act_economica
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_celular
     - field.field.node.cliente.field_cliente_direccion
@@ -40,6 +41,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_cliente_act_economica: true
   field_cliente_apellido: true
   field_cliente_celular: true
   field_cliente_direccion: true
