@@ -3,7 +3,6 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.cliente.body
     - field.field.node.cliente.field_cliente_act_economica
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_celular
@@ -23,22 +22,11 @@ dependencies:
     - datetime
     - path
     - telephone
-    - text
 id: node.cliente.default
 targetEntityType: node
 bundle: cliente
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 21
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 16

@@ -3,11 +3,12 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.contacto.body
     - field.field.node.contacto.field_contacto_apellido
     - field.field.node.contacto.field_contacto_nombre
+    - field.field.node.contacto.field_contacto_tipo_documento
     - node.type.contacto
   module:
+    - options
     - panelizer
     - user
 third_party_settings:
@@ -29,12 +30,18 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_contacto_tipo_documento:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  body: true
   field_contacto_apellido: true
   langcode: true

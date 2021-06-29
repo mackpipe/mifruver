@@ -3,7 +3,6 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.cliente.body
     - field.field.node.cliente.field_cliente_act_economica
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_celular
@@ -22,7 +21,6 @@ dependencies:
     - datetime
     - options
     - panelizer
-    - text
     - user
 third_party_settings:
   panelizer:
@@ -35,13 +33,6 @@ targetEntityType: node
 bundle: cliente
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_cliente_act_economica:
     weight: 14
     label: above

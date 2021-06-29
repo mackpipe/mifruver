@@ -1,0 +1,28 @@
+uuid: fe423d30-81af-47ed-820a-4cd730da7f6b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contacto_tipo_documento
+    - node.type.contacto
+  module:
+    - options
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.contacto.field_contacto_tipo_documento
+field_name: field_contacto_tipo_documento
+entity_type: node
+bundle: contacto
+label: 'Tipo Documento'
+description: 'Ingrese el número de documento'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
