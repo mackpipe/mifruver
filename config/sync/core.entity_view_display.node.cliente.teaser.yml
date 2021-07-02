@@ -31,6 +31,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  body: true
   field_cliente_act_economica: true
   field_cliente_apellido: true
   field_cliente_celular: true
