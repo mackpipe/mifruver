@@ -43,5 +43,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   field_contacto_apellido: true
   langcode: true
