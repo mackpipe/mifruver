@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.contacto.body
     - field.field.node.contacto.field_contacto_apellido
+    - field.field.node.contacto.field_contacto_fax
     - field.field.node.contacto.field_contacto_nombre
     - field.field.node.contacto.field_contacto_numero_documento
     - field.field.node.contacto.field_contacto_tipo_documento
     - node.type.contacto
   module:
     - path
+    - telephone
 id: node.contacto.default
 targetEntityType: node
 bundle: contacto
@@ -29,6 +31,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_contacto_fax:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
     region: content
   field_contacto_nombre:
     weight: 1

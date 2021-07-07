@@ -1,0 +1,21 @@
+uuid: ddfd2780-873f-4969-b945-cb2340f10a85
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contacto_fax
+    - node.type.contacto
+  module:
+    - telephone
+id: node.contacto.field_contacto_fax
+field_name: field_contacto_fax
+entity_type: node
+bundle: contacto
+label: Fax
+description: 'Digite el número de fax del Contacto. Ejemplo: 7000000'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone
