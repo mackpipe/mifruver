@@ -1,0 +1,49 @@
+uuid: 78f13823-352f-41fc-88df-aeadf21100cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_paragraph_video_title
+    - field.field.paragraph.video.field_paragraph_video_video
+    - paragraphs.paragraphs_type.video
+  module:
+    - field_group
+    - video_embed_field
+third_party_settings:
+  field_group:
+    group_opciones:
+      children:
+        - field_paragraph_video_title
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Opciones
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_paragraph_video_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_paragraph_video_video:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+hidden:
+  created: true
+  status: true
