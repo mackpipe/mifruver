@@ -1,0 +1,66 @@
+uuid: 80b0d9e6-18c2-41d3-b651-5650d8b4c343
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_text.field_paragraph_video_text_posit
+    - field.field.paragraph.video_text.field_paragraph_video_text_text
+    - field.field.paragraph.video_text.field_paragraph_video_text_title
+    - field.field.paragraph.video_text.field_paragraph_video_text_video
+    - paragraphs.paragraphs_type.video_text
+  module:
+    - field_group
+    - video_embed_field
+third_party_settings:
+  field_group:
+    group_opciones:
+      children:
+        - field_paragraph_video_text_title
+        - field_paragraph_video_text_posit
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Opciones
+id: paragraph.video_text.default
+targetEntityType: paragraph
+bundle: video_text
+mode: default
+content:
+  field_paragraph_video_text_posit:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_paragraph_video_text_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_paragraph_video_text_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_paragraph_video_text_video:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+hidden:
+  created: true
+  status: true

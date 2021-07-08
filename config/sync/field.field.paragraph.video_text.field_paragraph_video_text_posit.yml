@@ -1,0 +1,28 @@
+uuid: 9189ae4c-55fa-4d7b-8b5a-aaf5708d8c72
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_video_text_posit
+    - paragraphs.paragraphs_type.video_text
+  module:
+    - options
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: paragraph.video_text.field_paragraph_video_text_posit
+field_name: field_paragraph_video_text_posit
+entity_type: paragraph
+bundle: video_text
+label: Posición
+description: 'Escoja la posición como desea ver el video + texto'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
