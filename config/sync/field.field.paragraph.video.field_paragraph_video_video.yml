@@ -1,0 +1,25 @@
+uuid: baf39e69-c1c0-4938-bb44-b56eaa70c270
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_video_video
+    - paragraphs.paragraphs_type.video
+  module:
+    - video_embed_field
+id: paragraph.video.field_paragraph_video_video
+field_name: field_paragraph_video_video
+entity_type: paragraph
+bundle: video
+label: Video
+description: 'Ingrese la URL del video que desea reproducir'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: '0'
+    youtube: '0'
+    youtube_playlist: '0'
+field_type: video_embed_field
