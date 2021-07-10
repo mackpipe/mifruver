@@ -1,0 +1,27 @@
+uuid: c9da2c2c-ef0b-4958-9eca-17da2101d3cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_slider_titulo
+    - paragraphs.paragraphs_type.slider
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: paragraph.slider.field_paragraph_slider_titulo
+field_name: field_paragraph_slider_titulo
+entity_type: paragraph
+bundle: slider
+label: Titulo
+description: 'Ingrese un titulo para el slider'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

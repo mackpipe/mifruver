@@ -1,0 +1,27 @@
+uuid: 6df30d4e-4e93-4d86-b696-72488e09f739
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_slider_placehold
+    - paragraphs.paragraphs_type.slider
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: paragraph.slider.field_paragraph_slider_placehold
+field_name: field_paragraph_slider_placehold
+entity_type: paragraph
+bundle: slider
+label: Placeholder
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
