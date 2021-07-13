@@ -1,0 +1,28 @@
+uuid: 5cfee735-d2b8-44b8-b29c-1f44c43652f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_text_posit
+    - paragraphs.paragraphs_type.texto
+  module:
+    - options
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: paragraph.texto.field_paragraph_text_posit
+field_name: field_paragraph_text_posit
+entity_type: paragraph
+bundle: texto
+label: Posicion
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
