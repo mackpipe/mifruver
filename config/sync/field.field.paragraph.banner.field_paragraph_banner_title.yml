@@ -1,0 +1,27 @@
+uuid: 82771c58-3172-41c8-9424-fb9ee5caae2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_banner_title
+    - paragraphs.paragraphs_type.banner
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: paragraph.banner.field_paragraph_banner_title
+field_name: field_paragraph_banner_title
+entity_type: paragraph
+bundle: banner
+label: Titulo
+description: 'Ingrese el titulo del banner'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
