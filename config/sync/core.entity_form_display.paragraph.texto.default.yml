@@ -1,0 +1,46 @@
+uuid: 5e997104-a9fe-4b22-8ec8-c56a87aed755
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texto.field_paragraph_text_column
+    - field.field.paragraph.texto.field_paragraph_text_posit
+    - field.field.paragraph.texto.field_paragraph_text_text
+    - field.field.paragraph.texto.field_paragraph_text_title
+    - paragraphs.paragraphs_type.texto
+id: paragraph.texto.default
+targetEntityType: paragraph
+bundle: texto
+mode: default
+content:
+  field_paragraph_text_column:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_paragraph_text_posit:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_paragraph_text_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_paragraph_text_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

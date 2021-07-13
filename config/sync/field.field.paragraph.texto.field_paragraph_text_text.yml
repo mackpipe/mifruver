@@ -1,0 +1,19 @@
+uuid: a86b1a36-013e-4930-a264-460e50322486
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_text_text
+    - paragraphs.paragraphs_type.texto
+id: paragraph.texto.field_paragraph_text_text
+field_name: field_paragraph_text_text
+entity_type: paragraph
+bundle: texto
+label: Descripcion
+description: 'Ingrese un texto Ejemplo: Conjunto de enunciados que componen un documento escrito.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,28 @@
+uuid: 3aabde1f-db67-4d14-9ee0-438dddbff675
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_text_column
+    - paragraphs.paragraphs_type.texto
+  module:
+    - options
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: paragraph.texto.field_paragraph_text_column
+field_name: field_paragraph_text_column
+entity_type: paragraph
+bundle: texto
+label: Columnas
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
