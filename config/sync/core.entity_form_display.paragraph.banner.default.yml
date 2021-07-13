@@ -1,0 +1,51 @@
+uuid: e32828f6-a248-42ec-9e2e-c50d4555b9c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner.field_paragraph_banner_banner
+    - field.field.paragraph.banner.field_paragraph_banner_placehold
+    - field.field.paragraph.banner.field_paragraph_banner_title
+    - field.field.paragraph.banner.field_paragraph_banner_width
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.banner
+  module:
+    - svg_image
+id: paragraph.banner.default
+targetEntityType: paragraph
+bundle: banner
+mode: default
+content:
+  field_paragraph_banner_banner:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_paragraph_banner_placehold:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_paragraph_banner_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_paragraph_banner_width:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

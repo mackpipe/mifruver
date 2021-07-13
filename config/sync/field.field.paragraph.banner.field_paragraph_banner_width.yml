@@ -1,0 +1,28 @@
+uuid: 088beba0-200f-45d0-94de-cc74243dd6e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_banner_width
+    - paragraphs.paragraphs_type.banner
+  module:
+    - options
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: paragraph.banner.field_paragraph_banner_width
+field_name: field_paragraph_banner_width
+entity_type: paragraph
+bundle: banner
+label: Ancho
+description: 'Seleccione una opción de los posibles anchos de la pantalla y/o el 100% del contenedor donde este ubicado.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,27 @@
+uuid: db1d326f-0e29-4ee2-909b-2225cbd12bf2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_banner_placehold
+    - paragraphs.paragraphs_type.banner
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: paragraph.banner.field_paragraph_banner_placehold
+field_name: field_paragraph_banner_placehold
+entity_type: paragraph
+bundle: banner
+label: Placeholder
+description: 'Registre un texto alusivo al banner '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
