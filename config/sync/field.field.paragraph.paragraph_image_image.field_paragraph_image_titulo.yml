@@ -1,0 +1,27 @@
+uuid: e3580939-20aa-49d4-84f3-c95dc8441bab
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_image_titulo
+    - paragraphs.paragraphs_type.paragraph_image_image
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: paragraph.paragraph_image_image.field_paragraph_image_titulo
+field_name: field_paragraph_image_titulo
+entity_type: paragraph
+bundle: paragraph_image_image
+label: Titulo
+description: 'Ingrese el titulo de la Imagen'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
