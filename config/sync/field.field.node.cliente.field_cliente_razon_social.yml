@@ -1,0 +1,27 @@
+uuid: 26fcc7cd-2e7e-40f2-85f1-c8da60d26f27
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_razon_social
+    - node.type.cliente
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.cliente.field_cliente_razon_social
+field_name: field_cliente_razon_social
+entity_type: node
+bundle: cliente
+label: 'Razón social'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
