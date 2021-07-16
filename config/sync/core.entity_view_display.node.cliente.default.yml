@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.node.cliente.body
     - field.field.node.cliente.field_cliente_act_economica
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_celular
@@ -12,6 +13,7 @@ dependencies:
     - field.field.node.cliente.field_cliente_forma_pago
     - field.field.node.cliente.field_cliente_nombre
     - field.field.node.cliente.field_cliente_numero_documento
+    - field.field.node.cliente.field_cliente_razon_social
     - field.field.node.cliente.field_cliente_regimen
     - field.field.node.cliente.field_cliente_tipo_cliente
     - field.field.node.cliente.field_cliente_tipo_documento
@@ -98,6 +100,14 @@ content:
     region: content
   field_cliente_numero_documento:
     weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cliente_razon_social:
+    weight: 15
     label: above
     settings:
       link_to_entity: false
