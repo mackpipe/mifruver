@@ -1,0 +1,23 @@
+uuid: bd019729-6de5-4a4c-9d19-f8fe42199b74
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contacto_celular
+    - node.type.contacto
+id: node.contacto.field_contacto_celular
+field_name: field_contacto_celular
+entity_type: node
+bundle: contacto
+label: Celular
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
