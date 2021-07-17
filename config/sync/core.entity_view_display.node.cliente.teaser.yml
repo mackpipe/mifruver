@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.cliente.field_cliente_act_economica
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_celular
+    - field.field.node.cliente.field_cliente_contacto
     - field.field.node.cliente.field_cliente_direccion
     - field.field.node.cliente.field_cliente_fax
     - field.field.node.cliente.field_cliente_fecha_constitucion
@@ -37,6 +38,7 @@ hidden:
   field_cliente_act_economica: true
   field_cliente_apellido: true
   field_cliente_celular: true
+  field_cliente_contacto: true
   field_cliente_direccion: true
   field_cliente_fax: true
   field_cliente_fecha_constitucion: true

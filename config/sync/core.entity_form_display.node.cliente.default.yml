@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.cliente.field_cliente_act_economica
     - field.field.node.cliente.field_cliente_apellido
     - field.field.node.cliente.field_cliente_celular
+    - field.field.node.cliente.field_cliente_contacto
     - field.field.node.cliente.field_cliente_direccion
     - field.field.node.cliente.field_cliente_fax
     - field.field.node.cliente.field_cliente_fecha_constitucion
@@ -31,7 +32,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 17
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -57,6 +58,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
+    region: content
+  field_cliente_contacto:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_cliente_direccion:
     weight: 7
@@ -167,14 +174,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 15
+    weight: 16
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 20
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -182,21 +189,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 19
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 21
+    weight: 22
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 19
+    weight: 20
     region: content
     third_party_settings: {  }
   title:
@@ -209,7 +216,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 16
+    weight: 17
     settings:
       match_operator: CONTAINS
       size: 60
