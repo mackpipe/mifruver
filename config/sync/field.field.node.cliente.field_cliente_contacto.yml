@@ -1,0 +1,37 @@
+uuid: 020b601a-a1cd-4de3-8e55-a40e6f5b6feb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_contacto
+    - node.type.cliente
+    - node.type.contacto
+  module:
+    - unique_field_ajax
+third_party_settings:
+  unique_field_ajax:
+    unique: 0
+    per_lang: 0
+    use_ajax: 0
+    message: ''
+id: node.cliente.field_cliente_contacto
+field_name: field_cliente_contacto
+entity_type: node
+bundle: cliente
+label: Contacto
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contacto: contacto
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
